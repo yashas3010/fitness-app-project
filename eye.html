@@ -1,0 +1,556 @@
+<html>
+<head>
+<title> Pink Eye  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+      
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+   
+      
+        
+       
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+   flex-direction: column;
+    }
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+p{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 150%
+}
+.about {
+  border: 1px solid gray;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+        
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<center><h1> PINK EYE </h1></center>              
+
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="eye.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="e3.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="e2.JPG" style="width:100%">
+    
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+
+
+
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+
+
+</br>
+</br>
+</br>
+
+<h1> What is pink eye? </h1>
+<p>
+  <br>
+
+One or both of your toddler’s eyes can become red or pink in color when a virus, 
+bacterium, allergen, or irritant inflames the conjunctiva. The conjunctiva is
+the transparent covering of the white part of the eye.
+</p>
+<p>
+  <br>
+
+Pink eye, also known as conjunctivitis, is a very common cause 
+of eye discoloration, discharge, and discomfort in both children and adults.
+</p>
+<p>  
+  <br>
+
+If you suspect pink eye in your toddler, their symptoms 
+should be reviewed by a doctor. If your child has a contagious 
+form of pink eye, they’ll need to spend time at home to reduce 
+the chances of spreading the condition to others.
+</p>
+
+<h1>How to identify Pink eye</h1> 
+<p>
+  <br>
+
+
+There are four type of pink eye <br>
+1. Viral <br>
+2. Bacterial <br>
+3.Allergic <br>
+4. Irritant<br>
+<br>
+<br>
+
+
+Pink eye often has more symptoms than just a pink- or red-colored eye.
+ Some symptoms are the same for all types of pink eye, while other types 
+ will have unique symptoms.
+<br>
+<br>
+
+Here are some other symptoms to look for in your child <br>
+<br>
+
+1. itching that may cause a child to rub their eye<br>
+2. gritty feeling that may make a child think there’s sand or something else in their eye<br>
+3. white, yellow, or green discharge that forms crust around the eye during sleep<br>
+4. watery eyes<br> 
+5. swollen eyelids<br>
+6. sensitivity to light<br>
+<br>
+<br>
+Allergic and irritant pink eye may result mainly in watery and itchy, 
+discolored eyes without the other symptoms. If your child has allergic 
+pink eye, you may also notice symptoms unrelated to the eye, like a runny nose and sneezing.
+<br>
+<br>
+Your child may have symptoms in one eye or both eyes:
+<br>
+<br>
+
+
+1. Allergic and irritant pink eye will usually appear in both eyes. <br>
+2. viral and bacterial pink eye can appear in both eyes or in just a single eye.<br>
+</p>
+
+
+
+<h1> What causes pink eye ? </h1>
+<p>
+  <br>
+
+Viral pink eye is a contagious version of conjunctivitis that’s caused by a virus.
+ The same virus that causes the common cold or other viral infections can cause pink eye.<br> 
+ <br>
+
+
+Your child may catch this form of pink eye from another person,
+ or it may be the result of their own body spreading a viral infection through mucous membranes.
+ <br>
+ <br>
+
+</p>
+
+<h1>Bacterial pink eye </h1>
+<p> 
+  <br>
+
+Bacterial pink eye is also a contagious form of pink eye.
+ Like viral pink eye, bacterial pink eye can be caused by bacteria
+  that cause common illnesses, like some ear infections.
+<br>
+<br>
+
+Your child can get bacterial pink eye from touching contaminated objects
+ or from contact with those who have the infection.
+ <br>
+ <br>
+</p> 
+<h1> Allergic pink eye</h1>
+<p>
+This type of pink eye is not contagious. It occurs when the
+ body reacts to contact with an outside allergen like pollen, grass, or dander.
+<br>
+<br>
+
+
+Your toddler may have allergic pink eye seasonally, depending on what
+ allergens are more prevalent in the environment.
+<br>
+<br>
+</p>
+<h1> Irritant pink eye </h1>
+<p>
+  <br>
+
+Your child’s eyes may turn pink in color if exposed to something that
+ irritates the eyes, like chlorine in a swimming pool or smoke.
+ This type of pink eye is not contagious.
+ <br>
+ <br>
+</p>
+
+
+<h1> Does your child need to see the docter </h1>
+<p>
+  <br>
+
+It’s important to get your child’s symptoms diagnosed as soon as you notice changes to the eye.
+<br>
+
+<br>
+
+This not only helps your child get proper treatment, but also reduces 
+the chances of your child spreading the condition to others. With
+ untreated pink eye, your child can be contagious for up to two weeks.
+<br>  
+<br>  
+During the exam, your child’s doctor will look at your child’s eyes and 
+ask you about other symptoms.
+<br>
+<br>
+
+
+There is a rare chance that the doctor will want a sample from 
+the eye to send to the laboratory for testing, generally if it 
+hasn’t cleared up after treatment.
+<br>
+<br>
+
+
+</p>
+<h1>How to treat pink eye in toddlers </h1>
+<h1> Treating bacterial pink eye </h1>
+
+<p>
+  <br>
+
+Bacterial pink eye can be treated with antibiotics that are applied topically.
+<br>
+<br>
+
+
+You’ll probably see some improvement in your child’s eyes within a few days, 
+but make sure your child uses the entire course of antibiotics to 
+clear out the bacterial infection.
+<br>
+<br>
+
+    
+Your doctor may prescribe an eye drop antibiotic, but you may find it
+ difficult to get this into your toddler’s eyes.
+<br>
+<br>    
+You can try to administer them by dropping them in the corner of each
+ of your child’s closed eyes. The drops can then flow naturally into 
+ the eye when your child opens them.
+<br>
+<br>
+
+   
+It may be more appropriate to use an ointment antibiotic
+ when treating a toddler. You can apply the ointment to the 
+ sides of your toddler’s eye, and the ointment will slowly make
+  its way into the eye as it melts.
+<br>
+<br>
+</p> 
+<h1> Treating allergic pink eye </h1>
+<p>
+  <br>
+
+Pink eye caused by allergies will be treated differently than bacterial or viral pink eye.
+<br>
+<br>
+
+
+
+Your doctor may recommend an antihistamine for your toddler or another medicine,
+ depending on your child’s other symptoms and the severity of the condition.
+  A cool compress may also soothe the symptoms.
+<br>
+<br>
+
+</p>
+
+<h1>Treating irritant pink eye </h1>
+<p>
+  <br>
+
+   
+Your doctor may treat irritant-caused pink eye by flushing the eyes to remove
+ the irritant from the eyes.
+<br>
+<br>
+
+</p> 
+
+<h1>How does pink eye spread?</h1> 
+<p><br>
+  
+
+Viral and bacterial pink eye are contagious. 
+These versions of pink eye are spread from coming into contact with
+ a person who has pink eye or with something the infected person has touched.
+ <br>
+ <br>
+
+    
+Even coughing and sneezing can send the infection airborne and allow 
+it to spread from person to person.
+<br>
+<br>
+
+    
+Allergy- and irritant-caused pink eye cannot be spread from person to person.
+<br>
+<br>
+
+</p> 
+
+<br>
+<br>
+<br>
+<br>
+
+
+    
+    
+                      
+                      
+  
+  
+                         
+                
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>      
+  
+</body>
+  
+</html>
+  
+            
+ 

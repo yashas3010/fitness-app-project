@@ -1,0 +1,884 @@
+<html>
+<head>
+<title> DIGESTION </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+    
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+   
+    
+
+
+  
+    
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> TIPS TO CURE DIGESTIVE PROBLEM </h1></center>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="dg.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="dg1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="dg2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<h1>11 best ways to improve digestion naturally </h1> 
+<p>
+<br>
+Everyone experiences occasional digestive symptoms such as 
+upset stomach, gas, heartburn, nausea, constipation or diarrhea.
+<br>
+<br>
+
+
+However, when these symptoms occur frequently, they can cause major 
+disruptions to your life.
+<br>
+<br>
+
+Fortunately, diet and lifestyle changes can have a positive impact on your gut health.
+<br>
+<br>
+
+
+Here are 11 evidence-based ways to improve your digestion naturally.
+<br>
+<br>
+
+</p>
+
+<h1> Eat real food </h1>
+<p>
+<br>
+The typical Western diet — high in refined carbs, saturated fat
+ and food additives — has been linked to an increased risk of 
+ developing digestive disorders (1Trusted Source).
+ <br>
+ <br>
+
+
+Food additives, including glucose, salt and other chemicals, 
+have been suggested to contribute to increased gut inflammation, 
+leading to a condition called leaky gut (2Trusted Source).
+<br>
+<br>
+
+
+Trans fats are found in many processed foods. They’re well-known 
+for their negative effects on heart health but have also been
+ associated with an increased risk of developing ulcerative 
+ colitis, an inflammatory bowel disease (3Trusted Source).
+ <br>
+ <br>
+
+
+What’s more, processed foods like low-calorie drinks
+ and ice creams often contain artificial sweeteners,
+  which may cause digestive problems.
+  <br>
+  <br>
+
+
+One study found that eating 50 grams of the artificial
+ sweetener xylitol led to bloating and diarrhea in 70% 
+ of people, while 75 grams of the sweetener erythritol
+  caused the same symptoms in 60% of people (4Trusted Source).
+<br>
+<br>
+
+Studies also suggest that artificial sweeteners may increase 
+your number of harmful gut bacteria (4Trusted Source,
+ 5Trusted Source, 6Trusted Source).
+ <br>
+ <br>
+
+
+Gut bacteria imbalances have been linked to irritable 
+bowel syndrome (IBS) and irritable bowel diseases like
+ ulcerative colitis and Crohn’s disease (7Trusted Source).
+ <br>
+ <br>
+
+
+Fortunately, scientific evidence suggests that diets 
+high in nutrients protect against digestive diseases (8Trusted Source).
+<br>
+<br>
+
+
+Therefore, eating a diet based on whole foods and limiting
+ the intake of processed foods may be best for optimal digestion.
+ <br>
+ <br>
+
+</p> 
+
+<h1> Get plenty of fibre </h1>
+<p>
+<br>
+It’s common knowledge that fiber is beneficial for good digestion.
+<br>
+<br>
+
+
+Soluble fiber absorbs water and helps add bulk to your stool.
+ Insoluble fiber acts like a giant toothbrush, helping your
+  digestive tract keep everything moving along (9Trusted Source).
+  <br>
+  <br>
+
+
+Soluble fiber is found in oat bran, legumes, nuts and seeds, 
+while vegetables, whole grains and wheat bran are good sources of insoluble fiber.
+<br>
+<br>
+
+
+A high-fiber diet has been linked to a reduced risk of digestive
+ conditions, including ulcers, reflux, hemorrhoids, diverticulitis
+  and IBS (10Trusted Source).
+  <br>
+  <br>
+
+
+Prebiotics are another type of fiber that feed your healthy 
+gut bacteria. Diets high in this fiber have been shown to 
+reduce the risk of inflammatory bowel conditions (8Trusted Source).
+<br>
+<br>
+
+
+Prebiotics are found in many fruits, vegetables and grains.
+<br>
+<br>
+
+</p>
+
+<h1> Add healthy fats to your diet</h1>
+<p>
+<br>
+Good digestion may require eating enough fat. Fat helps
+ you feel satisfied after a meal and is often needed for proper nutrient absorption.
+ <br>
+ <br>
+
+
+
+Additionally, studies have shown that omega-3 fatty acids may
+ decrease your risk of developing inflammatory bowel diseases
+  like ulcerative colitis (3Trusted Source, 11Trusted Source).
+  <br>
+  <br>
+
+
+
+Foods high in beneficial omega-3 fatty acids include 
+flaxseeds, chia seeds, nuts (especially walnuts), as well
+ as fatty fish like salmon, mackerel and sardines (12Trusted Source, 13Trusted Source).
+ <br>
+ <br>
+</p>
+
+<h1> Stay Hydrated </h1>
+<p>
+<br>
+Low fluid intake is a common cause of constipation (14Trusted Source, 15Trusted Source).
+<br>
+<br>
+
+
+Experts recommend drinking 50–66 ounces (1.5–2 liters) of non-caffeinated 
+fluids per day to prevent constipation. However, you may need more if you
+ live in a warm climate or exercise strenuously (15Trusted Source).
+ <br>
+ <br>
+
+
+In addition to water, you can also meet your fluid intake
+ with herbal teas and other non-caffeinated beverages such as seltzer water.
+ <br>
+ <br>
+
+
+Another way to help meet your fluid intake needs is 
+to include fruits and vegetables that are high in water,
+ such as cucumber, zucchini, celery, tomatoes, melons,
+  strawberries, grapefruit and peaches (16Trusted Source, 17Trusted Source).
+  <br>
+  <br>
+
+</p>       
+
+<h1> Manage your stress </h1>
+<p>
+<br>
+Stress can wreak havoc on your digestive system.
+<br>
+<br>
+
+
+It has been associated with stomach ulcers, diarrhea,
+ constipation and IBS (18Trusted Source, 19Trusted Source,
+  20Trusted Source, 21Trusted Source).
+  <br>
+  <br>
+
+
+Stress hormones directly affect your digestion. When
+ your body is in fight-or-flight mode, it thinks you
+  don’t have time to rest and digest. During periods
+   of stress, blood and energy are diverted away from
+    your digestive system.
+    <br>
+    <br>
+
+
+Additionally, your gut and brain are intricately connected
+ — what affects your brain may also impact your digestion
+  (20Trusted Source, 22Trusted Source, 23Trusted Source).
+  <br>
+  <br>
+
+
+Stress management, meditation and relaxation training
+ have all been shown to improve symptoms in people with IBS (24Trusted Source).
+ <br>
+ <br>
+
+
+Other studies have found that cognitive behavioral
+ therapy, acupuncture and yoga have improved digestive symptoms (25Trusted Source).
+ <br>
+ <br>
+
+
+Therefore, incorporating stress management techniques,
+ such as deep belly breathing, meditation or yoga, may 
+ improve not only your mindset but also your digestion.
+ <br>
+ <br>
+
+</p>
+ 
+<h1> Eat mindfully </h1>
+<p>
+<br>
+It’s easy to eat too much too quickly if you’re not paying attention,
+ which can lead to bloating, gas and indigestion.
+ <br>
+ <br>
+
+
+Mindful eating is the practice of paying attention to all 
+aspects of your food and the process of eating (26).
+<br>
+<br>
+
+Studies have shown that mindfulness may reduce digestive
+ symptoms in people with ulcerative colitis and IBS (27Trusted Source).
+ <br>
+ <br>
+
+
+To eat mindfully:
+<br>
+
+
+1. Eat slowly.<br>
+2. Focus on your food by turning off your TV and putting away your phone.<br>
+3. Notice how your food looks on your plate and how it smells.<br>
+4. Select each bite of food consciously.<br>
+5. Pay attention to the texture, temperature and taste of your food.<br>
+</p>
+
+<h1> Chew your food </h1>
+<p>
+<br>
+Digestion starts in your mouth. Your teeth break down the food 
+into smaller pieces so that the enzymes in your digestive tract
+ are better able to break it down.
+ <br>
+ <br>
+
+
+Poor chewing has been linked to decreased nutrient absorption (28Trusted Source).
+<br>
+<br>
+
+
+When you chew your food thoroughly, your stomach has to do less
+ work to turn the solid food into the liquid mixture that enters your small intestine.
+ <br>
+ <br>
+
+
+Chewing produces saliva, and the longer you chew, the more saliva
+ is made. Saliva helps start the digestive process in your mouth
+  by breaking down some of the carbs and fats in your meal.
+  <br>
+  <br>
+
+
+In your stomach, saliva acts as a fluid, which is mixed
+ with the solid food so that it smoothly passes into your intestines.
+ <br>
+ <br>
+
+
+Chewing your food thoroughly ensures that you have plenty of
+ saliva for digestion. This may help prevent symptoms such as indigestion and heartburn.
+ <br>
+ <br>
+
+
+What’s more, the act of chewing has even been shown to
+ reduce stress, which may also improve digestion (29Trusted Source).
+ <br>
+ <br>
+
+</p>
+
+<h1> Get moving </h1>
+<p>
+<br>
+Regular exercise is one of the best ways to improve your digestion.
+<br>
+<br>
+
+Exercise and gravity help food travel through your digestive system.
+ Therefore, taking a walk after a meal may assist your body in moving things along.
+ <br>
+ <br>
+
+
+One study in healthy people showed that moderate exercise, 
+such as cycling and jogging, increased gut transit time by nearly 30% (30Trusted Source).
+<br>
+<br>
+
+In another study in people with chronic constipation, a daily 
+exercise regimen including 30 minutes of walking significantly 
+improved symptoms (31Trusted Source).
+<br>
+<br>
+
+
+Additionally, studies suggest that exercise may reduce 
+symptoms of inflammatory bowel diseases due to anti-inflammatory 
+effects, such as decreasing inflammatory compounds
+ in your body (32Trusted Source, 33Trusted Source).
+ <br>
+ <br>
+
+</p>
+    
+<h1> Slow down and listen to your body  </h1>
+<p>
+<br>
+When you’re not paying attention to your hunger and fullness cues,
+ it’s easy to overeat and experience gas, bloating and indigestion.
+ <br>
+ <br>
+
+
+It’s a commonly held belief that it takes 20 minutes for your
+ brain to realize that your stomach is full.
+ <br>
+ <br>
+
+
+While there’s not a lot of hard science to back up this 
+claim, it does take time for hormones released by your 
+stomach in response to food to reach your brain (33).
+<br>
+<br>
+
+
+Therefore, taking the time to eat slowly and pay attention 
+to how full you’re getting is one way to prevent common digestive problems.
+<br>
+<br>
+
+
+Additionally, emotional eating negatively impacts your 
+digestion. In one study, people who ate when they were 
+anxious experienced higher levels of indigestion and bloating (34Trusted Source).
+
+<br>
+<br>
+
+Taking the time to relax before a meal may improve your digestive symptoms.
+<br>
+<br>
+</p>    
+<h1> Quit bad habits  </h1>
+<p>
+<br>
+You know that bad habits such as smoking,
+ drinking too much alcohol and eating late
+  at night aren’t great for your overall health.
+  <br>
+  <br>
+
+
+And, in fact, they may also be responsible for some common digestive issues.
+<br>
+<br>
+
+
+<b>Smoking </b>
+<br>
+<br>
+
+Smoking nearly doubles the risk of developing acid reflux (35Trusted Source).
+<br>
+<br>
+
+
+Furthermore, studies have shown that quitting smoking improves these symptoms (36Trusted Source).
+<br>
+<br>
+
+
+This bad habit has also been associated with stomach ulcers, increased surgeries 
+in people with ulcerative colitis and gastrointestinal cancers (37Trusted Source,
+ 38Trusted Source, 39Trusted Source).
+ <br>
+ <br>
+
+
+If you have digestive issues and smoke cigarettes
+, keep in mind that quitting may be beneficial.
+<br>
+<br>
+
+
+<b>Alcohol </b>
+<br>
+<br>
+
+Alcohol can increase acid production in your stomach and may 
+lead to heartburn, acid reflux and stomach ulcers.
+<br>
+<br>
+
+
+Excessive alcohol consumption has been linked to bleeding
+ in the gastrointestinal tract (40Trusted Source).
+ <br>
+ <br>
+
+
+Alcohol has also been associated with inflammatory bowel
+ diseases, leaky gut and harmful changes in gut bacteria (41Trusted Source).
+ <br>
+ <br>
+
+
+Reducing your consumption of alcohol may help your digestion.
+<br>
+<br>
+
+
+<b>Late-Night Eating </b>
+<br>
+<br>
+
+Eating late at night and then lying down to sleep can lead to heartburn and indigestion.
+<br>
+<br>
+
+Your body needs time to digest, and gravity helps keep the 
+food you eat moving in the right direction.
+<br>
+<br>
+
+
+Additionally, when you lie down, the contents of your 
+stomach may rise up and cause heartburn. Lying down
+ after eating is strongly associated with an increase in reflux symptoms (42Trusted Source).
+ <br>
+ <br>
+
+If you experience digestive issues at bedtime, try waiting
+ three to four hours after eating before going to bed, to
+  give the food time to move from your stomach to your small intestine.
+  <br>
+  <br>
+
+</p>
+
+<h1> Incorporate gut supporting nutrients </h1>
+<p>
+<br>
+Certain nutrients may help support your digestive tract.
+<br>
+<br>
+
+<b>Probiotics</b>
+<br>
+<br>
+Probiotics are beneficial bacteria that may improve digestive health when taken as supplements.
+<br>
+<br>
+
+
+These healthy bacteria assist in digestion by breaking down indigestible
+ fibers that can otherwise cause gas and bloating.
+ <br>
+ <br>
+
+
+Studies have shown that probiotics may improve symptoms of bloating, 
+gas and pain in people with IBS (43Trusted Source).
+<br>
+<br>
+
+
+What’s more, they may improve symptoms of constipation and
+ diarrhea (44Trusted Source, 45Trusted Source).
+ <br>
+ <br>
+
+Probiotics are found in fermented foods such as sauerkraut, 
+kimchi and miso, as well as yogurts that have live and active cultures.
+<br>
+<br>
+
+
+They’re also available in capsule form. A good general 
+probiotic supplement will contain a mix of strains including Lactobacillus and Bifidobacterium.
+<br>
+<br>
+
+
+<b>Glutamine </b>
+<br>
+<br>
+
+Glutamine is an amino acid that supports gut health. 
+It has been shown to reduce intestinal permeability
+ (leaky gut) in people who are critically ill (46Trusted Source).
+ <br>
+ <br>
+
+
+You can increase your glutamine levels by eating foods 
+such as turkey, soybeans, eggs and almonds (47Trusted Source).
+<br>
+<br>
+
+
+Glutamine can also be taken in supplement form, but 
+talk to your healthcare practitioner first to ensure
+ that it’s an appropriate treatment strategy for you.
+ <br>
+ <br>
+
+
+<b>Zinc</b>
+<br>
+<br>
+
+Zinc is a mineral that is critical for a healthy gut
+, and a deficiency can lead to various gastrointestinal disorders (48Trusted Source).
+<br>
+<br>
+
+
+Supplementing with zinc has been shown to be beneficial in 
+treating diarrhea, colitis, leaky gut and other digestive issues (48Trusted Source).
+<br>
+<br>
+
+The recommended daily intake (RDI) for zinc is 8 mg for women and 11 mg for men.
+<br>
+<br>
+
+
+Foods high in zinc include shellfish, beef and sunflower seeds (49Trusted Source).
+<br>
+<br>
+
+</p>
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

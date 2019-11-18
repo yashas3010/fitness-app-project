@@ -1,0 +1,637 @@
+<html>
+<head>
+<title> LOSE WEIGHT </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+   
+    
+
+
+
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> COMPLETE INFORMATION YOU NEED TO KNOW TO LOOSE WEIGHT </h1></center>
+
+
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="loose.JPG" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="loose1.JPG" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="loose2.JPG" style="width:100%">
+          
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+      
+      
+      
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+    
+    
+    
+    
+
+
+<p>
+<br>
+There are many ways to lose a lot of weight fast.
+<br>
+<br>
+
+
+However, most of them will make you hungry and unsatisfied.
+<br>
+<br>
+
+
+If you don't have iron willpower, then hunger will cause you to give up on these plans quickly.
+<br>
+<br>
+
+The plan outlined here will:<br>
+
+1. Reduce your appetite significantly.<br>
+2. Make you lose weight quickly, without hunger.<br>
+3. Improve your metabolic health at the same time.<br>
+<br>
+
+Here is a simple 3-step plan to lose weight fast
+</p>
+<h1>Cut back on Sugar and starch </h1>
+<p>
+<br>
+The most important part is to cut back on sugars and starches (carbs).
+<br>
+<br>
+
+
+When you do that, your hunger levels go down and you end up eating much 
+fewer calories (1Trusted Source).
+<br>
+<br>
+
+
+Now instead of burning carbs for energy, your body starts feeding off of stored fat.
+<br>
+<br>
+
+
+Another benefit of cutting carbs is that it lowers insulin levels, 
+causing your kidneys to shed excess sodium and water out of your 
+body. This reduces bloat and unnecessary water weight (2, 3Trusted Source).
+<br>
+<br>
+
+
+It is not uncommon to lose up to 10 pounds (sometimes more) in 
+the first week of eating this way, both body fat and water weight.
+<br>
+<br>
+
+
+
+
+Cut the carbs and you will start to eat fewer calories automatically and without hunger 
+<br>
+<br>
+
+
+Put simply, cutting carbs puts fat loss on autopilot.
+<br>
+<br>
+
+</p>
+
+<h1> Eat protein , Fat and vegetable </h1>
+<p>
+<br>
+Each one of your meals should include a protein source, a fat source and low-carb vegetables.
+<br>
+<br>
+
+
+Constructing your meals in this way will automatically bring your carb intake into the recommended range of 20–50 grams per day.
+<br>
+<br>
+
+
+<b>Protein Sources</b>
+<br>
+<br>
+
+Meat: Beef, chicken, pork, lamb, etc.<br>
+Fish and Seafood: Salmon, trout, shrimp, etc.<br>
+Eggs: Whole eggs with the yolk are best.<br>
+The importance of eating plenty of protein cannot be overstated.<br>
+<br>
+
+
+This has been shown to boost metabolism by 80 to 100 calories per day (6Trusted Source, 7Trusted Source, 8Trusted Source).
+<br>
+<br>
+
+
+High-protein diets can also reduce cravings and obsessive thoughts about food by 60%, reduce 
+the desire for late-night snacking by half, and make you so full that you automatically
+ eat 441 fewer calories per day — just by adding protein to your diet (9Trusted Source, 10Trusted Source).
+ <br>
+ <br>
+
+
+When it comes to losing weight, protein is the king of nutrients. Period.
+<br>
+<br>
+
+
+Low-Carb Vegetables<br>
+Broccoli<br>
+Cauliflower<br>
+Spinach<br>
+Tomatoes<br>
+Kale<br>
+Brussels sprouts<br>
+Cabbage<br>
+Swiss chard<br>
+Lettuce<br>
+Cucumber<br>
+<br>
+Full list here.
+<br>
+Don’t be afraid to load your plate with these low-carb vegetables.
+ You can eat massive amounts of them without going over 20–50 net carbs per day.
+ <br>
+
+
+A diet based mostly on meat and vegetables contains all the fiber, vitamins and minerals you need to be healthy.
+<br>
+<br>
+
+
+Fat Sources
+<br>
+<br>
+
+Olive oil<br>
+Coconut oil<br>
+Avocado oil<br>
+Butter<br>
+<br>
+
+Eat 2–3 meals per day. If you find yourself hungry in the afternoon, add a 4th meal.
+<br>
+<br>
+
+
+Don’t be afraid of eating fat, as trying to do both low-carb 
+AND low-fat at the same time is a recipe for failure. It will 
+make you feel miserable and abandon the plan.
+<br>
+<br>
+
+
+To see how you can assemble your meals, check out this low-carb 
+meal plan and this list of 101 healthy low-carb recipes.
+<br>
+<br>
+
+</p>
+
+<h1>Lift weigts </h1>
+<p>
+<br>
+You don't need to exercise to lose weight on this plan, but it is recommended.
+<br>
+<br>
+
+
+The best option is to go to the gym 3–4 times a week. Do a warm-up and lift some weights.
+<br>
+<br>
+
+
+If you're new to the gym, ask a trainer for some advice.
+<br>
+<br>
+
+
+By lifting weights, you will burn lots of calories and prevent your 
+metabolism from slowing down, which is a common side effect of losing weight (11Trusted Source, 12Trusted Source).
+<br>
+<br>
+
+
+Studies on low-carb diets show that you can even gain a bit of muscle while losing significant amounts of body fat (13).
+<br>
+<br>
+
+
+If lifting weights is not an option for you, then doing some cardio workouts 
+like walking, jogging, running, cycling or swimming will suffice.
+<br>
+<br>
+
+</p>
+
+<h1>Optional — Do a "Carb Refeed" Once Per Week </h1>
+<p>
+<br>
+
+You can take one day off per week where you eat more carbs. Many people prefer Saturday.
+<br>
+<br>
+
+
+It is important to stick to healthy carb sources like oats, rice, quinoa, potatoes, sweet potatoes, fruit, etc.
+<br>
+<br>
+
+But only this one higher carb day — if you start doing it more often than once per
+ week you're not going to see much success on this plan.
+ <br>
+ <br>
+
+
+If you must have a cheat meal and eat something unhealthy, then do it on this day
+<br>
+<br>
+.
+
+Be aware that cheat meals or carb refeeds are NOT necessary, but they can boost some 
+fat-burning hormones like leptin and thyroid hormones (14Trusted Source, 15Trusted Source)
+<br>
+<br>
+.
+
+You will gain some weight during your refeed day, but most of it will 
+be water weight and you will lose it again in the next 1–2 days.
+<br>
+<br>
+
+</p>
+<h1> What about calories and portion control </h1>
+<p>
+<br>
+It is NOT necessary to count calories as long as you keep the carbs
+ very low and stick to protein, fat and low-carb vegetables.
+ <br>
+ <br>
+
+
+However, if you really want to count them, use this calculator.
+<br>
+<br>
+
+
+Enter your details, and then pick the number from either the 
+"Lose Weight" or the "Lose Weight Fast" section — depending on how fast you want to lose weight.
+<br>
+<br>
+
+
+There are many great tools you can use to track the number of
+ calories you are eating. Here is a list of 5 calorie counters that are free and easy to use.
+ <br>
+ <br>
+
+
+The main goal of this plan is to keep carbs under 20–50 grams per day
+ and get the rest of your calories from protein and fat.
+ <br>
+ <br>
+
+</p>
+<h1>10 Weight Loss Tips to Make Things Easier (and Faster) </h1>
+<p>
+<br>
+
+Here are 10 more tips to lose weight even faster:
+<br>
+<br>
+
+
+1. Eat a high-protein breakfast. Eating a high-protein breakfast has been shown to 
+reduce cravings and calorie intake throughout the day (16Trusted Source, 17Trusted Source).
+<br>
+2. Avoid sugary drinks and fruit juice. These are the most fattening things
+ you can put into your body, and avoiding them can help you lose weight (18Trusted Source, 19).
+ <br>
+3. Drink water a half hour before meals. One study showed that drinking water a half 
+hour before meals increased weight loss by 44% over 3 months (20Trusted Source).
+<br>
+
+4. Choose weight loss-friendly foods (see list). Certain foods are 
+very useful for losing fat. Here is a list of the 20 most weight loss-friendly foods on earth.
+<br>
+5. Eat soluble fiber. Studies show that soluble fibers may reduce fat,
+ especially in the belly area. Fiber supplements like glucomannan can also help (21Trusted Source, 22Trusted Source).<br>
+6. Drink coffee or tea. If you're a coffee or tea drinker, then drink as much as you want as the caffeine
+ can in them boost your metabolism by 3–11% (23Trusted Source, 24Trusted Source, 25Trusted Source).<br>
+7. Eat mostly whole, unprocessed foods. Base most of your diet on whole foods. They are healthier,
+ more filling and much less likely to cause overeating.<br>
+8. Eat your food slowly. Fast eaters gain more weight over time. Eating slowly
+ makes you feel more full and boosts weight-reducing hormones (26, 27Trusted Source).<br>
+9. Weigh yourself every day. Studies show that people who weigh themselves every day 
+are much more likely to lose weight and keep it off for a long time (28Trusted Source, 29Trusted Source).<br>
+10. Get a good night's sleep, every night. Poor sleep is one of the strongest risk factors for
+ weight gain, so taking care of your sleep is important (30).<br>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h3> <a href ="macro.html" > Click to Check out the macros required </a></h3>
+<h3> <a href ="diet.html" > Click to Check Find a diet according to Your body </a></h3>
+
+
+
+        
+       
+        
+
+    
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

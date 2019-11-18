@@ -1,0 +1,405 @@
+<html>
+<head>
+<title> FAT CALCULATOR </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+box-sizing: border-box;
+}
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 2;
+}
+
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+      
+        
+      
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {   
+flex-direction: column;
+}
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+div.gallery {
+margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 235px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 230px;
+  height: 230px;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.m {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+ 
+
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+
+
+
+
+</head>
+<body style="background-color:powderblue;">
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+        
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<div>
+
+<center><h1>FAT calculator</h1></center>
+<form action="#">
+Gender:<br>
+
+<select id="gender" name="gender">
+<option value="masc">Male</option>
+<option value="female">Female</option>
+</select>
+Age:<br>
+<input type="number" id="age" value="20"><br>
+Height:<br>
+<input type="number" id="height" value="180"><br>
+Weight:<br>
+<input type="number" id="weigth" value="80"><br>
+</form>
+      
+<button type="button" class="button" onclick=""> Calculate </button><br><br>
+
+<br>
+
+
+<h3 id="lblResult"></h3><br>
+<h3 id="lblResult1"></h3><br>
+<h3 id="lblResult2"></h3>
+<h4 id="lblResult3"></h4>
+<h4 id="lblResult4"></h4>
+<h4 id="lblResult5"></h4><br>
+
+</div>
+
+        
+<script>
+var bmr;
+var ftl;
+var pro;
+var car;
+var fat;
+
+function calc() {
+  
+  var age = document.getElementById("age").value;
+  var gender = document.getElementById("gender").value;
+  var height = document.getElementById("height").value;
+  var weigth = document.getElementById("weigth").value;
+  if (gender == "masc") {
+  bmr = 66.5 + ( 13.75 * weigth ) + ( 5.003 * height ) - ( 6.755 * age );
+  }
+  else {
+  bmr = 655.1 + ( 9.563 * weigth ) + ( 1.850 * height ) - ( 4.676 * age );
+  } 
+}
+
+function calc1(){
+  ftl=bmr*1.5 - 750;
+}
+
+
+
+function fat1(){
+  fat=(ftl*0.25)/9;
+}
+
+
+
+
+
+
+    
+    
+
+document.getElementsByTagName("button")[0].addEventListener("click", function() {
+  calc();
+  document.getElementById('lblResult').innerHTML ="Your BMR is : " + bmr;
+
+})
+
+document.getElementsByTagName("button")[0].addEventListener("click", function() {
+  calc1();
+  document.getElementById('lblResult1').innerHTML ="Your required daily calories is : " +ftl;
+})
+
+document.getElementsByTagName("button")[0].addEventListener("click", function() {
+  pro1();
+  document.getElementById('lblResult2').innerHTML = "Your required Fat intake is : ";
+
+})
+
+
+
+
+
+document.getElementsByTagName("button")[0].addEventListener("click", function() {
+  fat1();
+  document.getElementById('lblResult5').innerHTML = "FAT : " +fat;
+
+})
+
+
+
+ 
+    
+
+</script>
+    
+
+
+
+
+
+ 
+
+
+  
+
+        
+                      
+                    
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+        
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class="footer">
+  <div class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="gethealthy.html">GET HEALTHY</a>
+  <a href="#" class="right">CONTACT US</a>
+  </div>
+  </div>
+                       
+              
+        
+
+</body>
+
+</html>

@@ -1,0 +1,700 @@
+<html>
+<head>
+<title> IMMUNIZATION </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 200px;
+}
+
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+    
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+
+
+
+    
+    
+    
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+
+</br>
+</br>
+</br>
+
+<center><h1>Vaccines definition </h1></center>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="immune1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="immune2.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="immune3.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+<p>
+<br>
+The body’s immune system helps protect against pathogens that
+ cause infection. Most of the time, it’s an efficient system.
+  It either keeps microorganisms out or tracks them down and gets rid of them.
+  <br>
+  <br>
+
+
+However, some pathogens can overwhelm the immune system. When
+ this happens, it can cause serious illness.
+ <br>
+ <br>
+
+
+The pathogens most likely to cause problems are the ones
+ the body doesn’t recognize. Vaccination is a way to “teach” the 
+ immune system how to recognize and eliminate an organism. 
+ That way, your body is prepared if you’re ever exposed.
+ <br>
+ <br>
+
+
+Vaccinations are an important form of primary prevention
+. That means they can protect people from getting sick. 
+Vaccinations have allowed us to control diseases that once threatened 
+many lives, such as:
+<br>
+<br>
+
+
+1. measles<br>
+2. polio<br>
+3. tetanus<br>
+4. whooping cough<br>
+<br>
+<br>
+It’s important that as many people as possible get vaccinated.
+ Vaccinations don’t just protect individuals. When enough people are vaccinated, 
+ it helps protect society.
+<br>
+<br>
+
+
+This occurs through herd immunity. Widespread 
+vaccinations make it less likely that a susceptible
+ person will come into contact with someone who has a particular disease.
+ <br>
+ <br> 
+
+
+</p>
+<h1> How does vaccination work? </h1>
+<p> 
+<br>
+A healthy immune system defends against invaders. The immune
+ system is composed of several types of cells. These cells
+  defend against and remove harmful pathogens. However, they
+   have to recognize that an invader is dangerous.
+<br>
+<br>
+
+
+Vaccination teaches the body to recognize new diseases.
+ It stimulates the body to make antibodies against antigens
+  of pathogens. It also primes immune cells to remember
+   the types of antigens that cause infection. That allows
+    for a faster response to the disease in the future.
+<br>
+<br>
+
+
+Vaccines work by exposing you to a safe version of a disease. This can take the form of:
+<br>
+
+1. a protein or sugar from the makeup of a pathogen<br>
+2. a dead or inactivated form of a pathogen<br>
+3. a toxoid containing toxin made by a pathogen<br>
+4. a weakened pathogen
+<br>
+<br>
+
+When the body responds to the vaccine, it builds an adaptive 
+immune response. This helps equip the body to fight off an actual infection.
+<br>
+<br>
+
+
+Vaccines are usually given by injection. Most vaccines
+ contain two parts. The first is the antigen. This is the
+  piece of the disease your body must learn to recognize. 
+
+  The second is the adjuvant.
+
+<br>
+<br>
+
+The adjuvant sends a danger signal to your body. 
+It helps your immune system to respond more strongly 
+against the antigen as an infection. This helps you
+ develop immunity.
+ <br>
+ <br>
+
+</p>    
+
+<h1>Vacination schedule </h1>
+<p>
+<br>
+Vaccines are very important for infants, 
+but they’re not all given immediately after
+ birth. Each vaccine is given on a timeline, 
+ and some require multiple doses
+ <br>
+ <br>
+
+</p>
+<h1>Vaccinations are safe</h1>
+<p>
+<br>
+Vaccines are considered to be safe. They’re rigorously 
+tested and go through many rounds of study, examination,
+ and research before they’re used with the general public.
+ <br>
+ <br>
+
+
+The overwhelming bulk of research and evidence 
+shows that vaccines are safe and that side effects 
+are rare. Side effects that do occur are typically mild.
+<br>
+<br>
+
+
+Indeed, the greatest risk for most individuals will
+ come if you choose not to get a vaccine and potentially 
+ get sick after exposure to a disease. The illness may be 
+ far worse than the potential side effects of the vaccine. It could even be deadly.
+ <br>
+ <br>
+
+</p> 
+<h1>Vaccinations pros and cons </h1>
+<p>
+<br>
+When considering whether or not to be vaccinated, these factors may be important to consider:<br>
+
+<br>
+<b>Pros</b><br>
+<br>
+1. Vaccines help prevent dangerous diseases that have killed, and can sicken 
+or kill, many people.
+<br>
+
+2. Researchers thoroughly investigate each vaccine before presenting the 
+data to the U.S. Food and Drug Administration (FDA). The FDA can approve
+ or deny the vaccine. The overwhelming majority of research shows that vaccines are safe.
+ <br>
+
+3. Vaccines not only protect you. They protect people around you, especially 
+people who are not well enough to be vaccinated.
+<br>
+
+4. Each vaccine is made with different components, and each can 
+affect you differently. People who have experienced allergic
+ reactions to certain vaccines in the past may experience
+  an allergic reaction again.
+  <br>
+
+5. You could still get sick, even if you’re vaccinated.
+<br>
+
+6. Some people with weakened immune systems cannot be vaccinated 
+or should be only under close supervision of a health care provide
+<br>
+
+
+</p> 
+    
+<h1> Vaccination side effects </h1>
+<p>
+<br>
+Most side effects from a vaccine injection are mild.
+ Some people will experience no side effects at all.
+<br>
+<br>
+
+When they do occur, side effects, some rarer than others, may include:<br>
+
+
+1. pain, redness, or swelling at the injection site<br>
+2. joint pain near the injection site<br>
+3. muscle weakness<br>
+4. low-grade to high fever<br>
+5. sleep disturbances<br>
+6. fatigue<br>
+7. memory loss<br>
+8. complete muscle paralysis on a particular area of the body<br>
+9. hearing or vision loss<br>
+10. seizures<br>
+<br>
+Some risk factors do increase your risk for experiencing side effects 
+from a vaccination. These risk factors include:
+<br>
+
+1. having a weak or suppressed immune system<br>
+2. being sick at the time you receive a vaccine<br>
+3. having a family or personal history of vaccine reactions<br>
+4. Serious or life-threatening side effects or reactions from vaccines 
+are rare. Indeed, most people are at a higher risk of becoming ill from
+ diseases if they’re not vaccinated.
+ <br>
+ <br>
+</p>
+    
+
+<h1>Vaccination effectiveness </h1>
+<p>
+<br>
+Vaccines are highly effective, but no vaccine is 100 percent effective.
+ The effectiveness rate for vaccines differs from one type to the next.
+<br>
+<br>
+
+
+Flu vaccines are effective in lowering the risk of infection by 40
+ to 60 percentTrusted Source in people who get the shot. That may 
+ sound low, but keep in mind the flu vaccine is designed to match 
+ the strain of the flu scientists expect to be most abundant in a coming flu season.
+ <br>
+ <br>
+
+If they’re wrong, the vaccine may be less effective.
+ If they’re right, the rate of protection may be higher.
+ <br>
+
+
+The measles vaccine, on the other hand, is 98 percentTrusted 
+Source effective when used as recommended. Indeed, most childhood 
+vaccines are 85 to 95 percentTrusted Source effective if administered
+ properly, according to the World Health Organization (WHO).
+ <br>
+ <br>
+
+</p>
+
+<h1>Vacciantion in children </h1>
+<p>
+<br>
+Vaccines are given in childhood to help protect their 
+young immune systems against a range of potentially deadly 
+diseases. Infants have a natural immunity from their mothers
+ in their earliest months. As that begins to wane, 
+ vaccines are given to take over and help keep babies from falling ill.
+ <br>
+ <br>
+
+Vaccines help protect children against diseases that their 
+friends, playmates, classmates, and family members may introduce 
+to them. That’s why some vaccines require a booster,
+ or a follow-up dose, as children near school age. The booster
+  shot helps reinforce your child’s defenses against illness.
+<br>
+<br>
+
+
+The U.S. Centers for Disease Control and Prevention 
+(CDC)Trusted Source sets a recommended vaccine schedule.
+ Many vaccines are delivered in a group or vaccine series.
+  However, if you’d like to space your child’s vaccines
+   out more, talk with your child’s doctor about your preference.
+   <br>
+   <br>
+
+</p> 
+
+<h1> Vaccination ingredients </h1>
+<p>
+<br>
+
+Vaccines teach your immune system to recognize a particular 
+virus or bacterium so that it can defeat it should your body 
+encounter the disease again.
+<br>
+<br>
+
+
+Four types of vaccines are currently used:
+<br>
+
+1. Killed (inactivated) vaccines are made from a virus or bacterium that is not living.<br>
+2. Live virus vaccines use a weakened (attenuated) version of a virus or bacterium.<br>
+3. Toxoid vaccines come from a harmful chemical or toxin that is made by bacteria
+ or viruses. Toxoid vaccines do not make you immune to the germ. Instead, they 
+ make you immune to the harmful effects from the toxin of a germ. The tetanus 
+ shot is a type of toxoid vaccine.
+ <br>
+4. Subunit, recombinant, polysaccharide, and conjugate vaccines 
+take a structural component from a virus or bacterium that can 
+train your immune system to attack this part of the germ.
+<br>
+<br>
+
+Other ingredients are used to keep the vaccines safe during production, 
+storage, and transportation.
+
+<br>
+<br>
+
+
+These ingredients may also help the vaccine work more effectively
+ once it’s administered. These additives represent a very small 
+ portion of the vaccine, however.
+ <br>
+ <br>
+
+
+These additives include:
+<br>
+
+
+1. Suspending fluid. Sterile water, saline, or other fluids keep the
+ vaccine safe during production, storage, and use.
+ <br>
+ 
+2. Adjuvants or enhancers. These ingredients help make the vaccine
+ more effective once it’s injected. Examples include aluminum gels or salts.
+ <br>
+
+3. Preservatives and stabilizers. Many vaccines are made 
+months, even years, before they’re used. These ingredient
+s help prevent the virus, bacterium, or protein pieces from 
+breaking down and becoming ineffective. Examples of a 
+stabilizer are monosodium glutamate (MSG) and thimerosal.
+<br>
+
+4. Antibiotics. Small amounts of a bacteria-fighting drug 
+may be added to vaccines to prevent the growth of germs during production and storage.
+<br>
+
+</p>
+
+<h1>Vaccination list </h1>
+<p>
+<br>
+Vaccines are a lifelong defense against illness. 
+While childhood vaccines are important, you may receive
+ injections or boosters throughout your entire life.
+ <br>
+ <br>
+
+ <b>Infacy and early childhood list </b>
+1. hepatitis B vaccine<br>
+2. DTaP (diphtheria, tetanus, and pertussis) vaccine<br>
+3. haemophilus influenzae type b vaccine (Hib)<br>
+4. pneumococcal conjugate vaccine (PCV)<br>
+5. inactivated poliovirus vaccine (IPV)<br>
+6. measles, mumps, and rubella (MMR) vaccine<br>
+7. varicella (chickenpox) vaccine<br>
+8. rotavirus (RV) vaccine<br>
+9. influenza vaccine (yearly after 6 months of age)<br>
+
+<br>
+<br>
+<b>Middle childhood vacination list </b>
+<br>
+<br>
+In addition to the most common childhood vaccinations, 
+your doctor may recommend these vaccines for your child:
+<br>
+
+1. varicella (chickenpox) vaccine<br>
+2. measles, mumps, and rubella (MMR) vaccine<br>
+3. hepatitis A vaccine<br>
+4. yearly influenza vaccine<br>
+<br>
+<br>
+<b>Young adult hood vacination </b>
+<br>
+<br>
+As your child grows older, other vaccines may be recommended. These include:
+<br>
+
+1. human papillomavirus (HPV) vaccine<br>
+2. meningococcal vaccine<br>
+3. Tdap booster<br>
+4. yearly influenza vaccine<br>
+<br>
+<br>
+
+
+
+</p> 
+    
+<br>
+<br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

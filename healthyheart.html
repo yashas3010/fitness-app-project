@@ -1,0 +1,654 @@
+<html>
+<head>
+<title> HAVE A HEALTHY HEART </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 2;
+}
+        
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+      
+        
+      
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {   
+flex-direction: column;
+}
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+div.gallery {
+margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 150px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 150px;
+  height: 150px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+h1,h2 {
+  text-align: center;
+}
+.a{
+    font-size-adjust: 25px;
+    
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+<div class="heart">
+<h1> TIPS TO HAVE A HEALTHY HEART </h1>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="hh.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="hh1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="hh2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+
+<p>
+<br>
+<b>Stop smoking—no ifs, ands, or butts</b>
+<br>
+<br>
+There are many steps you can take to help protect 
+your health and blood vessels. Avoiding tobacco is one of the best.
+<br>
+<br>
+
+
+In fact, smoking is one of the top controllable risk factors 
+for heart disease. If you smoke or use other tobacco products,
+the American Heart Association (AHA), National Heart,
+
+Lung, and Blood InstituteTrusted Source (NHLBI), and 
+Centers for Disease Control and PreventionTrusted Source 
+(CDC) all encourage you to quit. It can make a huge difference
+ to not just your heart, but your overall health, too.
+<br>
+<br>
+<b>Focus on the middle</b>
+<br>
+<br>
+
+
+That is, focus on your middle. Research in the Journal 
+of the American College of Cardiology has linked excess 
+belly fat to higher blood pressure and unhealthy blood lipid
+ levels. If you’re carrying extra fat around your middle,
+  it’s time to slim down. Eating fewer calories and exercising 
+  more can make a big difference.
+  <br>
+  <br>
+<b>Knit a scarf </b> 
+<br>
+<br>
+
+Put your hands to work to help your mind unwind.
+Engaging in activities such as knitting, sewing,
+and crocheting can help relieve stress and do
+your ticker some good. Other relaxing hobbies,
+such as woodworking, cooking, or completing j
+igsaw puzzles, may also help take the edge off 
+stressful days.
+<br>
+<br>
+
+<b>Power up your salsa with beans </b>
+<br>
+<br>
+
+When paired with low-fat chips or fresh veggies,
+salsa offers a delicious and antioxidant-rich snack.
+Consider mixing in a can of black beans for an added
+boost of heart-healthy fiber. According to the Mayo 
+Clinic, a diet rich in soluble fiber can help lower
+your level of low-density lipoprotein, or “bad cholesterol.”
+Other rich sources of soluble fiber include oats, barley, apples, pears, and avocados.
+<br>
+<br>
+<b>Let the music move you </b>
+<br>
+<br>
+Whether you prefer a rumba beat or two-step tune,
+ dancing makes for a great heart-healthy workout.
+  Like other forms of aerobic exercise, it raises 
+  your heart rate and gets your lungs pumping. It
+   also burns up to 200 calories or more per hour, reports the Mayo Clinic.
+<br>
+<br>
+<b> Go Fish</b>
+<br>
+<br>
+
+Eating a diet rich in omega-3 fatty acids
+ can also help ward off heart disease. Many 
+ fish, such as salmon, tuna, sardines, and herring, 
+ are rich sources of omega-3 fatty acids. Try to eat
+  fish at least twice a week, suggests the AHA. If you’re
+   concerned about mercury or other contaminants
+    in fish, you may be happy to learn that its 
+    heart-healthy benefits tend to outweigh the 
+    risks for most people.
+<br>
+<br>
+<b>Laugh out loud </b>
+<br>
+<br>
+
+Don’t just LOL in emails or Facebook posts. 
+Laugh out loud in your daily life. Whether you 
+like watching funny movies or cracking jokes with
+ your friends, laughter may be good for your heart
+ . According to the AHA, research suggests laughing 
+ can lower stress hormones, decrease inflammation in
+  your arteries, and raise your levels of high-density
+   lipoprotein (HLD), also known as “good cholesterol.”
+<br>
+<br>
+<b>Strech it out </b>
+<br>
+<br>
+Yoga can help you improve your balance, flexibility,
+ and strength. It can help you relax and relieve stress.
+  As if that’s not enough, yoga also has potential 
+  to improve heart health. According to research
+   published in the Journal of Evidence-Based Complementary
+    & Alternative MedicineTrusted Source, yoga demonstrates
+     potential to reduce your risk of cardiovascular disease.
+<br>
+<br>
+<b>Raise a glass </b>
+<br>
+<br>
+Moderate consumption of alcohol can help raise
+ your levels of HDL, or good cholesterol. It can
+  also help prevent blood clot formation and 
+  artery damage. According to the Mayo Clinic, 
+  red wine in particular may offer benefits for
+   your heart. That doesn’t mean you should guzzle 
+   it at every meal. The key is to only drink alcohol in moderation.
+<br>
+<br>
+
+<b>Sidestep salt </b>
+<br>
+<br>
+
+If the entire U.S. population reduced its average 
+salt intake to just half a teaspoon a day, it would 
+significantly cut the number of people who develop
+coronary heart disease every year, report researchers
+ in the New England Journal of Medicine. The authors
+  suggest that salt is one of the leading drivers of
+   rising healthcare costs in the United States. 
+   Processed and restaurant-prepared foods tend to 
+   be especially high in salt. So think twice before
+    filling up on your favorite fast-food fix. 
+    Consider using a salt substitute, such as Mr
+    . Dash, if you have high blood pressure or heart failure
+.
+<br>
+<br>
+
+<b>Move it, move it, move it </b>
+<br>
+<br>
+
+No matter how much you weigh, sitting for long 
+periods of time could shorten your lifespan, warn
+ researchers in the Archives of Internal Medicine
+  and the American Heart AssociationTrusted Source.
+   Couch potato and desk jockey lifestyles seem to 
+   have an unhealthy effect on blood fats and blood sugar.
+    If you work at a desk, remember to take regular
+     breaks to move around. Go for a stroll on your 
+     lunch break, and enjoy regular exercise in your leisure time.
+<br>
+<br>
+
+<b>Know your numbers</b>
+<br>
+<br>
+
+Keeping your blood pressure, blood sugar, cholesterol,
+ and triglycerides in check is important for good heart 
+ health. Learn the optimal levels for your sex and age
+  group. Take steps to reach and maintain those levels.
+   And remember to schedule regular check-ups with your 
+   doctor. If you want to make your doctor happy, keep 
+   good records of your vitals or lab numbers, and bring 
+   them to your appointments.
+<br>
+<br>
+
+
+<b>Eat chocolate </b>
+<br>
+<br>
+
+Dark chocolate not only tastes delicious, it
+ also contains heart-healthy flavonoids. These
+  compounds help reduce inflammation and lower
+   your risk of heart disease, suggest scientists
+    in the journal Nutrients. Eaten in moderation
+    , dark chocolate — not oversweetened milk chocolate
+     — can actually be good for you. The next time you
+      want to indulge your sweet tooth, sink it into
+       a square or two of dark chocolate. No guilt required.
+<br>
+<br>
+
+
+<b>Kick your housework up a notch </b>
+<br>
+<br>
+
+Vacuuming or mopping the floors may not be as invigorating
+ as a Body Slam or Zumba class. But these activities and
+  other household chores do get you moving. They can give
+   your heart a little workout, while burning calories too
+   . Put your favorite music on and add some pep to your
+    step while you complete your weekly chores.
+<br>
+<br>
+
+
+<b>Go nuts </b>
+<br>
+<br>
+
+Almonds, walnuts, pecans, and other tree 
+nuts deliver a powerful punch of heart-healthy
+ fats, protein, and fiber. Including them in 
+ your diet can help lower your risk of cardiovascular 
+ disease. Remember to keep the serving size 
+ small, suggests the AHA. While nuts are full 
+ of healthy stuff, they’re also high in calories.
+<br>
+<br>
+
+
+<b>Be a kid </b>
+<br>
+<br>
+
+Fitness doesn’t have to be boring. Let your inner
+ child take the lead by enjoying an evening of 
+ roller skating, bowling, or laser tag. You can 
+ have fun while burning calories and giving your heart a workout.
+<br>
+<br>
+
+
+<b>Consider pet therapy </b>
+<br>
+<br>
+
+Our pets offer more than good company and 
+unconditional love. They also provide numerous
+ health benefits. Studies reported by the National
+  Institutes of Health (NIH) suggest that owning a
+   pet may help improve your heart and lung function. 
+   It may also help lower your chances of dying from heart disease.
+<br>
+<br>
+
+
+<b>Start and stop </b>
+<br>
+<br>
+Start and stop, then start and stop again.
+ During interval training, you alternate bursts
+  of intense physical activity with bouts of
+   lighter activity. The Mayo Clinic reports 
+   that doing so can boost the number of calories
+    you burn while working out.
+<br>
+<br>
+
+
+<b>Cut the fat </b>
+<br>
+<br>
+
+Slicing your saturated fat intake to no more than 
+7 percent of your daily calories can cut your risk
+ of heart disease, advises the USDA. If you don’t 
+ normally read nutrition labels, considering starting
+  today. Take stock of what you’re eating and avoid foods that are high in saturated fat.
+<br>
+<br>
+
+
+<b>Take the scenic route home</b>
+<br>
+<br>
+
+Put down your cell phone, forget about the driver who 
+cut you off, and enjoy your ride. Eliminating stress
+ while driving can help lower your blood pressure and 
+ stress levels. That’s something your cardiovascular system will appreciate.
+<br>
+<br>
+
+
+<b>Make time for breakfast </b>
+The first meal of the day is an important one. Eating
+ a nutritious breakfast every day can help you maintai
+ n a healthy diet and weight. To build a heart-healthy meal, reach for:
+ <br>
+ <br>
+
+1. whole grains, such as oatmeal, whole-grain cereals, or whole-wheat toast<br>
+2. lean protein sources, such as turkey bacon or a small serving of nuts or peanut butter<br>
+3. low-fat dairy products, such as low-fat milk, yogurt, or cheese<br>
+4. fruits and vegetables<br>
+5. Take the stairs<br>
+<br>
+<br>
+
+ Exercise is essential for good heart health, so why
+ not sneak it in at every opportunity? Take the stairs 
+ instead of the elevator. Park on the far side of the 
+ parking lot. Walk to a colleague’s desk to talk, instead 
+ of emailing them. Play with your dog or kids at the park,
+  instead of just watching them. Every little bit adds up to better fitness.
+
+<b>Brew up a heart-healthy potion </b>
+<br>
+<br>
+
+No magic is needed to brew up a cup of green or 
+black tea. Drinking one to three cups of tea per 
+day may help lower your risk of heart problems, 
+reports the AHA. For example, it’s linked to lower rates of angina and heart attacks.
+<br>
+<br>
+
+
+<b>Brush your teeth regularly </b>
+<br>
+<br>
+
+Good oral hygiene does more than keep your teeth white and glistening. 
+According to the Cleveland Clinic, some research suggests that the 
+bacteria that cause gum disease can also raise your risk of heart
+ disease. While the research findings have been mixed, there’s no 
+ downside to taking good care of your teeth and gums.
+<br>
+<br>
+
+<b>Walk it off </b>
+<br>
+
+The next time you feel overwhelmed, exasperated, or angry, take a s
+troll. Even a five-minute walk can help clear your head and lower you
+r stress levels, which is good for your health. Taking a half-hour w
+alk every day is even better for your physical and mental health.
+<br>
+<br>
+
+
+<b> Pump some iron </b>
+<br>
+<br>
+Aerobic fitness is key to keeping your heart healthy, 
+but it’s not the only type of exercise you should do. 
+It’s also important to include regular strength training 
+sessions in your schedule. The more muscle mass you build,
+ the more calories you burn. That can help you maintain
+  a heart-healthy weight and fitness level.
+<br>
+<br>
+
+
+<b>Find your happy place </b>
+<br>
+<br>
+
+A sunny outlook may be good for your heart, as well 
+as your mood. According to the Harvard T. H. Chan School
+ of Public Health, chronic stress, anxiety, and anger can
+  raise your risk of heart disease and stroke. Maintaining 
+  a positive outlook on life may help you stay healthier for longer.
+  <br>
+  <br>
+  
+</p>
+ 
+<br>
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                 
+                 
+                    
+
+
+                       
+              
+        
+
+</body>
+
+</html>

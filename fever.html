@@ -1,0 +1,482 @@
+<html>
+<head>
+<title> Fever </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+  }
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+      
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+   
+      
+        
+       
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+   flex-direction: column;
+    }
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+p{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 150%
+}
+.about {
+  border: 1px solid gray;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+        
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+
+<center><h1> FEVER</h1></center>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="fever.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="fe1.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="fe2.JPG" style="width:100%">
+    
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+
+
+
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+
+</br>
+</br>
+</br>
+
+<h1>When your baby has fever </h1>
+<p>
+  <br>
+  It can be concerning to wake up in the middle
+   of the night to a crying baby, and find they’re 
+   flushed or hot to the touch. The thermometer confirms 
+   your suspicions: Your baby has a fever. But what should 
+   you do? It’s important to learn how to comfort your feverish 
+   baby and recognize when you need to seek medical care
+   <br>
+   <br>
+
+</p> 
+
+<h1>Caring for a sick baby </h1>
+<p>
+  <br>
+  While you may be able to feel a temperature difference 
+  through touch alone, it’s not an accurate method of diagnosing fever.
+   When you suspect that your baby has a fever, take your baby’s temperature 
+   with a thermometer. A rectal temperature of more than 100.4°F (38°C) is 
+   considered a fever. In most cases, a fever is a sign that your baby’s 
+   body is fighting an infection. A fever can stimulate certain bodily 
+   defenses to protect against invading viruses and bacteria. While this
+   
+   is a positive step in fighting infection, a fever can also make your 
+   baby uncomfortable. You may also notice that they’re breathing faster.
+   <br>
+   <br>
+
+Fever is typically associated with the following illnesses:<br>
+
+1. croup<br>
+2. pneumonia<br>
+3. ear infections<br>
+4. influenza<br>
+5. colds<br>
+6. sore throat<br>
+7. blood, bowel, and urinary tract infections<br>
+8. meningitis<br>
+9. a range of viral illnesses<br>
+<br>
+Fevers can lead to dehydration if your baby is not drinking well 
+or is vomiting with their illness. Young children can 
+get dehydrated quickly.<br><br> Symptoms of dehydration may include:<br>
+1. crying without tears<br>
+2. dry mouth<br>
+3. fewer wet diapers<br> 
+<br>
+
+Unless your baby seems uncomfortable and isn’t sleeping, 
+eating, or playing normally, it’s fine to wait and see if
+ the fever goes away on its own.
+ <br>
+ <br>
+
+</p>
+
+<h1> How can I make my feverish baby comfortable? </h1>
+<p><br>
+Speak with your pediatrician about administering a dose of acetaminophen 
+or ibuprofen. These usually reduce fever by at least a degree or two after
+45 minutes or so. Your pharmacist or doctor can give you the correct dosage
+information for your baby. Do not give your baby aspirin. Make sure your
+baby isn’t overdressed, and be sure to offer fluids regularly. Dehydration 
+can be a concern for a feverish baby.<br><br>
+To comfort your baby, try these methods:<br>
+
+1. give a sponge bath or a lukewarm bath<br>
+2. use a cooling fan<br>
+3. remove extra clothing<br>
+4. offer extra fluids<br>
+<br>
+
+Check your baby’s temperature again after you have tried these things.
+Continue to check the temperature to see if the fever is getting lower,
+or getting higher. If your baby is breastfeeding, try to nurse
+more often to prevent dehydration. Try to keep your child’s room 
+comfortably cool. Use a fan to circulate air if the room is overly warm or stuffy.
+<br>
+<br>
+
+</p>
+<h1> When should you call the doctor if your child has a fever? </h1> 
+<p><br>
+ 
+Call your pediatrician immediately if your baby has a fever that is accompanied by 
+any of the following symptoms:<br>
+
+1. vomiting<br>
+2. diarrhea<br>
+3. an unexplained rash<br>
+4. a seizure<br>
+5. acting very ill, unusually sleepy, or very fussy<br>
+<br>
+
+</p>
+
+<h1> What if my new born has a fever  </h1>\
+<p>
+  <br>
+
+If your baby is younger than 3 months and you’ve
+taken a rectal temperature of 100.4°F (38°C) or 
+higher, call the doctor. Newborn babies can have 
+difficulty regulating body temperature when they’re
+sick. This means they may become cold instead of hot
+. If your newborn has a temperature lower than 97°F
+(36°C), call the doctor.
+<br>
+<br>
+
+</p>
+
+<h1>Siezurer and fever in infants </h1>
+<p>
+  <br>
+
+Sometimes, babies older than 6 months can have seizures 
+that are triggered by fever. They’re called febrile seizures,
+ and they sometimes run in the family. In many 
+ instances, a febrile seizure will take place during 
+ the first few hours of the illness. They can be
+ just seconds long, and usually last less than one 
+ minute. A baby may stiffen, twitch, and roll their
+  eyes before becoming limp and unresponsive. They 
+  may have skin that looks darker than usual. It can
+   be a very concerning experience for parents, 
+   but febrile seizures almost never result in long-term 
+   damage. Still, it’s important to report these 
+   convulsions to your baby’s doctor. If your baby 
+   seems to be having trouble breathing, call
+    911 or your local emergency services immediately.
+     Also call immediately if the seizure
+      continues for more than five minutes.
+<br>
+<br>
+</p> 
+<h1>Does my baby have fever or heat stroke </h1>
+<p>
+<br>
+In rare cases, a fever may be confused with heat-related illness,
+ or heatstroke. If your baby is in a very hot place, or
+if they’re overdressed in hot and humid weather, 
+heatstroke may occur. It’s not caused by infection or an internal condition. 
+Instead, it’s the result of surrounding heat. 
+Your baby’s temperature can rise to dangerously
+ high levels above 105°F (40.5°C) that must be
+  brought down again quickly.
+<br>
+<br>
+ Methods for cooling your baby include:<br>
+1. sponging them with cool water<br>
+2. fanning them<br>
+3. moving them to a cooler place<br>
+<br>
+
+
+Heatstroke should be considered an emergency,
+ so immediately after cooling down your baby, 
+ they must be seen by a doctor
+ <br>
+ <br>
+
+</p> 
+
+
+<h1> Next step </h1>
+<p>
+  <br>
+  A fever can be frightening, but it’s important to remember 
+  that it’s not usually a problem. Keep a close eye on your 
+  baby, and remember to treat them, not the fever. If they 
+  seem uncomfortable, do what you can to offer comfort.
+  If you’re feeling unsure about your baby’s temperature
+   or behavior, don’t hesitate to speak with your child’s doctor.
+   <br>
+   <br>
+
+</p>
+<br>
+<br>
+<br>
+
+
+
+
+
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                   
+                   
+                      
+  
+  
+                         
+                
+          
+  
+</body>
+  
+</html>
+  
+            
+ 
