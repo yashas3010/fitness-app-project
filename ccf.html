@@ -1,0 +1,772 @@
+<html>
+<head>
+<title> COMMAN COLD AND FLU </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1>What’s the difference between a cold and the flu?</h1></center>
+</br>
+</br>
+</br>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="ccf.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="ccf1.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="ccf2.JPG" style="width:100%">
+    
+  </div>
+  
+  
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  </div>
+  
+
+
+
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+<p>
+<br>
+The common cold and the flu may seem very similar at first.
+ They are indeed both respiratory illnesses and can cause
+  similar symptoms. However, different viruses cause these
+   two conditions, and your symptoms will gradually help
+    you differentiate between the two.
+    <br>
+    <br>
+
+Both a cold and the flu share a few common symptoms. 
+People with either illness often experience:
+<br>
+
+1. a runny or stuffy nose<br>
+2. sneezing<br>
+3. body aches<br>
+4. general fatigue.<br>
+<br>
+As a rule, flu symptoms are more severe than cold symptoms.
+<br>
+<br>
+
+
+Another distinct difference between the two is how serious they are.
+ Colds rarely cause additional health conditions or problems.
+  The flu, however, can lead to sinus and ear infections, pneumonia, and sepsis.
+
+  <br>
+  <br>
+
+To determine whether your symptoms are from a cold or from the flu,
+ you need to see your doctor. Your doctor will run tests that can
+  help determine what’s behind your symptoms.
+  <br>
+  <br>
+
+
+If your doctor diagnoses a cold, you’ll likely only need to treat 
+your symptoms until the virus has had a chance to run its course.
+ These treatments can include using over-the-counter (OTC) cold medications,
+  staying hydrated, and getting plenty of rest.
+  <br>
+  <br>
+
+
+If you have the flu, you may benefit from taking an OTC flu 
+medicine early in the virus’ cycle. Rest and hydration are 
+also very beneficial for people with the flu. Much like the 
+common cold, the flu just needs time to work its way through your body.
+<br>
+<br>
+</p>
+
+    
+<h1>What are the symptoms of a cold</h1>
+<p>
+<br>
+Cold symptoms typically take a few days to appear.
+ The symptoms of a cold rarely appear suddenly. 
+ Knowing the difference between cold and flu symptoms 
+ can help you decide how to treat your condition — and whether you need to see your doctor.
+ <br>
+ <br>
+
+
+Nasal symptoms include:
+<br>
+
+
+1. congestion<br>
+2. sinus pressure<br>
+3. runny nose<br>
+4. stuffy nose<br>
+5. loss of smell or taste<br>
+6. sneezing<br>
+7. watery nasal secretions<br>
+8. postnasal drip or drainage in the back of your throat<br>
+<br> 
+<br>
+
+ Head symptoms include:
+ <br>
+
+
+1. watery eyes<br>
+2. headache<br>
+3. sore throat<br>
+4. cough<br>
+5. swollen lymph nodes<br> 
+<br>
+
+Whole body symptoms include:<br>
+<br>
+
+
+1. fatigue or general tiredness<br>
+2. chills<br>
+3. body aches<br>
+4. low-grade fever<br>
+5. chest discomfort<br>
+6. difficulty breathing deeply<br>
+</p>
+
+<h1> Cold remedies for Adults </h1>
+<p>
+<br>
+The most common OTC medicines used for colds include decongestants, 
+antihistamines, and pain relievers. Common “cold” medicines sometimes
+ include a combination of these medicines. If you’re using one, be 
+ sure to read the label and understand what you’re taking so you
+  don’t accidentally take more than you should of any one class of drug.
+  <br>
+  <br>
+</p>
+<h1> Home remedies </h1>
+<p><br>
+    The most effective and common home remedies for a
+     cold include gargling with saltwater, rest, and staying 
+     hydrated. Some research also shows that herbs like
+      echinacea may be effective at reducing symptoms of 
+      a cold. These treatments don’t cure or treat a cold.
+       Instead, they can just make symptoms less severe and easier to manage.
+       <br>
+       <br>
+
+
+    If you have high blood pressure, talk with your doctor 
+    before you take any OTC cold medicine. Most people with 
+    high blood pressure can take these medicines with no concerns
+    . However, some decongestant medications work by narrowing
+     blood vessels. This may increase your blood pressure, and
+      if you already have blood pressure issues, the medicine may
+       complicate your condition.
+       <br>
+       <br>
+
+</p>
+<h1>Cold remedies for children </h1>
+<p>
+<br>
+The U.S. Food and Drug Administration (FDA) doesn’t recommend
+ children under the age of 4 take OTC cold medicines. 
+ Some doctors stretch that recommendation to age 6. If you
+  have any questions, talk with your child’s doctor.
+<br>
+<br>
+
+
+Ease a child’s cold symptoms with these home remedies:<br>
+
+<b>1. Rest:</b> Children who have a cold may be more lethargic and irritable
+ than normal. Let them stay home from school and rest until the cold has cleared.
+ <br>
+
+<b>2. Hydration: </b>It’s very important children with a cold get plenty of fluids.
+ Colds can dehydrate them quickly. Make sure they’re drinking regularly.
+  Water is great. Warm drinks like tea can pull double duty as a sore throat soother.
+<br>
+<br>
+
+<b>3. Food: </b> Kids with a cold may not feel as hungry as usual, 
+so look for ways to give them calories and fluids. Smoothies and soups
+ are two great options.
+ <br>
+ <br>
+
+
+<b>4. Salt gargles:</b> They aren’t the most pleasant experience,
+ but gargling with warm, salty water can make sore throats feel 
+ better. Saline nasal sprays can also help clear nasal congestion.
+ <br>
+ <br>
+
+
+<b>5. Warm baths:</b> A warm bath can sometimes help reduce a fever
+ and ease mild aches and pains that are common with a cold.    
+ <br>
+ <br>
+
+</p> 
+<h1> Options for cold medication </h1> 
+<p>
+<br>
+The most common OTC cold medicines for adults and children over
+ the age of 6 include decongestants, antihistamines, and pain relievers.
+ <br>
+ <br>
+
+
+
+Decongestants help ease nasal congestion and stuffiness
+. Antihistamines prevent sneezing and ease runny noses. 
+Pain relievers ease the general body aches that sometimes 
+accompany a cold.
+<br>
+<br>
+
+
+The most common side effects from OTC cold medications include:<br>
+
+
+1. dizziness<br>
+2. dehydration<br>
+3. dry mouth<br>
+4. drowsiness<br>
+5. nausea<br>
+6. headache<br>
+<br>
+Although these medicines may help you find symptom relief, 
+they won’t treat or shorten your cold’s duration.
+<br>
+<br>
+
+
+If you’ve previously been diagnosed with high blood pressure,
+ you should consult your doctor before using any OTC cold medications.
+  Certain medications help relieve symptoms by narrowing blood
+   vessels and reducing blood flow. If you have high blood pressure, 
+   this may affect blood flow throughout your body.
+   <br>
+   <br>
+
+
+Younger children shouldn’t receive these medicines.
+ Overuse and side effects from cold medicines may cause
+  serious problems for younger children.
+  <br>
+  <br>
+
+</p>
+
+<h1> Diagonising a cold </h1>
+<p>
+<br>
+Diagnosing a cold rarely requires a trip to your doctor’s office.
+ Recognizing symptoms of a cold is often all you need in order to
+  diagnose yourself. Of course, if symptoms worsen or persist after 
+  about a week’s time, you may need to see your doctor. You may actually
+   be showing symptoms of a different problem, such as the flu or strep throat.
+
+   <br>
+   <br>
+
+
+If you have a cold, you can expect the virus to work its way
+ out in about a week to 10 days. If you have the flu, this virus
+  may take the same amount of time to fully disappear, but if you
+   notice symptoms are getting worse after day five, or if they’ve 
+   not disappeared in a week, you may have developed another condition.
+   <br>
+   <br>
+
+
+The only way to definitively know if your symptoms are the
+ result of a cold or the flu is to have your doctor run a 
+ series of tests. Because the symptoms and treatments for a 
+ cold and the flu are very similar, a diagnosis only helps you 
+ make sure you’re paying more attention to your recovery.
+ <br>
+ <br>
+
+</p>
+
+<h1>How long does a cold last </h1>
+<p>
+<br>
+The common cold is a viral infection in your upper respiratory tract. 
+Viruses cannot be treated with antibiotics. In most cases,
+ viruses like the cold just need to run their course. You can 
+ treat the symptoms of the infection, but you can’t actually
+  treat the infection itself.
+  <br>
+  <br>
+
+
+The average common cold lasts anywhere from seven to 10 days.
+ Depending on your overall health, you may have symptoms for 
+ more or less time. For example, people who smoke or have asthma
+  may experience symptoms longer.
+  <br>
+  <br>
+
+If your symptoms do not ease or disappear in seven to 10 days, 
+you should make an appointment to see your doctor. Symptoms
+ that don’t go away could be a sign of a bigger problem, 
+ such as the flu or strep throat.
+ <br>
+ <br>
+
+</p>
+
+<h1>What foods to eat during cold </h1>
+<p>
+<br>
+When you’re sick you might not feel like eating at all,
+ but your body still needs the energy food provides. 
+ The following foods may be extra helpful for your cold recovery:
+<br>
+<br>
+
+
+<b>Chicken noodle soup</b>
+<br>
+
+The salty soup is a classic “treatment” for all kinds of 
+illnesses. It’s especially great for colds. Warm liquids are
+ good for helping open up your sinuses so you can breathe
+  more easily, and the salt from the soup can ease irritated
+   throat tissue.
+   <br>
+   <br>
+
+
+<b>Hot tea</b>
+<br>
+
+Warm drinks like tea are great for colds. Add honey for a 
+cough-busting boost. Slices of ginger can also reduce inflammation
+ and ease congestion. You shouldn’t drink coffee, though. Caffeine
+  can interfere with medicines, and it may increase your risk of dehydration.
+<br>
+<br>
+
+
+<b>Yogurt</b>
+<br>
+
+Yogurts contain billions of healthy bacteria 
+that can boost your gut health. Having a healthy
+ microbiome in your gut can help your body fight
+  any number of illnesses and conditions, including a cold.
+  <br>
+  <br>
+
+
+<b>Popsicles</b>
+<br>
+
+Like hot tea, popsicles may help numb and ease the pain of a sore throat. 
+Look for low-sugar varieties or make your own “smoothie” pop with yogurt
+, fruit, and natural juices.
+<br>
+<br>
+
+
+The most important thing to remember when you have a cold
+ is to stay hydrated. Drink water or warm tea regularly.
+  Avoid caffeine and alcohol while you’re recovering from a cold.
+   Both can make symptoms of a cold worse.
+   <br>
+   <br>
+
+</p> 
+
+<h1> Cold prevention </h1>
+<p>
+<br>
+Colds are very minor, but they are inconvenient and can 
+certainly be miserable. You can’t get a vaccine to prevent 
+colds like you can the flu. But you can do a few key
+ things during cold season to help you avoid picking up one of the viruses.
+ <br>
+ <br>
+
+
+Here are four tips for cold prevention:
+<br>
+<br>
+<br>
+
+
+
+1. Wash your hands. Old-fashioned soap and water is the best way 
+to stop the spread of germs. Only use antibacterial gels and sprays
+ as a last resort when you can’t get to a sink.
+ <br>
+ <br>
+
+
+2. Take care of your gut. Eat plenty of bacteria-rich foods like yogurt,
+ or take a daily probiotic supplement. Keeping your gut bacteria
+  community healthy can help your overall health.
+  <br>
+  <br>
+
+
+3. Avoid sick people. This is reason number one sick people shouldn’t 
+come into work or school. It’s very easy to share germs in tight 
+quarters like offices or classrooms. If you notice someone isn’t 
+feeling well, go out of your way to avoid them. Be sure to wash 
+your hands after coming into contact them.
+<br>
+<br>
+
+
+4. Cover your cough. Likewise, if you’re feeling sick, 
+don’t keep infecting people around you. Cover your cough
+ with a tissue or cough and sneeze into your elbow so you
+  don’t spray germs into your environment.
+  <br>
+  <br>
+
+</p>
+
+<h1> What causes cold </h1>
+<p>
+<br>
+<br>
+Viruses, often cold rhinoviruses, can be spread person to person
+ or surface to person. A virus can live on a surface for several 
+ days. If someone with a virus touches a door handle, people who 
+ touch that same handle for several days afterward may pick up the virus.
+ <br>
+ <br>
+
+
+Having the virus on your skin doesn’t mean you’ll get sick.
+ You must spread the virus to your eyes, nose, or mouth in order to get sick.
+ <br>
+ <br>
+
+</p>
+
+<h1>Risk factor for commman cold </h1>
+<p>
+<br>
+Certain conditions increase your risk for catching a cold. These include:<br>
+<br>
+
+
+<b>1. Time of year:</b> Colds can occur any time of year, but they’re more
+     common in the fall and winter.
+
+     <br>
+     <br>
+
+<b>2. Age:</b> Children under age 6 are more likely to develop colds.
+ Their risk is even higher if they are in day care or a child 
+ care setting with other kids.
+ <br>
+ <br>
+
+
+<b>3. Environment:</b> If you’re around a lot of people, such as on a plane
+ or at a concert, you’re more likely to encounter rhinoviruses.
+ <br>
+ <br>
+
+
+<b>4. Compromised immune system: </b>If you have a chronic illness or have been sick 
+recently, you may be more likely to pick up a cold virus.
+<br>
+<br>
+
+
+<b>5. Smoking:</b> People who smoke have an increased risk for catching a cold.
+ Their colds also tend to be more severe when they have them.
+ <br>
+ <br>
+
+</p>
+
+
+<br>
+<br>
+<br>
+
+
+    
+    
+    
+    
+    
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+      
+</html>
+        
+                    
+        
+    

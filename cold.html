@@ -1,0 +1,599 @@
+<html>
+<head>
+<title> COMMAN COLD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+  }
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+      
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+   
+      
+        
+       
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+   flex-direction: column;
+    }
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+p{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 150%
+}
+.about {
+  border: 1px solid gray;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+        
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+
+<center><h1>COLD </h1></center>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="cold.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="c1.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="c2.JPG" style="width:100%">
+    
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+
+
+
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</br>
+</br>
+</br>
+<h1>Cold and flu season </h1>
+<p>
+  <br>
+
+
+When temperatures start turning colder and kids are inside and interacting with each
+ other in greater numbers, cold and flu season inevitably follows.
+<br>
+<br>
+
+
+You may know that cold and flu season is around the corner, 
+but that doesn’t make it easier when you see your little 
+one struggling with a cough and a stuffy nose. Children under 
+the age of 5, and particularly under age 2, are at an especially 
+high risk during cold and flu season.
+<br>
+<br>
+
+
+Colds and flus are viral infections, so antibiotics won’t help when 
+it comes to clearing up an infection. However, there are steps you
+ can take to help your child feel better while their immune system 
+ battles the virus. Cold and flu season
+
+ <br>
+ <br>
+</p>
+<br>
+<br>
+<h1>Offer plenty of fluids  </h1>
+<p>
+  <br>
+
+    
+Keep your child hydrated to help reduce cold and flu 
+symptoms and make them feel better. Fevers can result 
+in dehydration. Your child may not feel as thirsty as 
+they normally would, and they may be uncomfortable when drinking, 
+so it’s important to encourage them to drink plenty of fluids.
+<br>
+<br>
+    
+Dehydration can be very serious in babies,
+ especially if they’re under 3 months old.
+  Call your pediatrician if you suspect your
+baby is dehydrated. Some signs may include:
+<br>
+<br>
+
+    
+1. no tears when crying<br>
+2. dry lips<br>
+3. soft spots that seem sunken-in<br>
+4. decreased activity<br>
+5. urinating less than three to four times in 24 hours
+<br>
+<br>
+
+If your child is breastfed, attempt to breastfeed them more frequently than usual.
+<br>
+ Your baby may be less interested in breastfeeding if they’re sick. 
+
+ You may have to have several short feeding sessions in order for them to consume enough fluid.
+ <br>
+ <br>
+
+    
+Ask your little one’s doctor if an oral rehydration solution (like Pedialyte) 
+is appropriate. Remember, you shouldn’t give little ones sports drinks.
+<br>
+<br>
+
+    
+Older children have more hydration options. These may include:
+    
+1.sports drinks<br>
+2.popsicles<br>
+3.juice<br>
+4.broth<br>
+5.flat white soda<br>
+
+</p>
+<br>
+<br>
+<h1>Clear up stuffed nasal passages </h1>
+<p>
+  <br>
+
+
+Medicated nasal sprays aren’t recommended for young children.
+ Fortunately, there are several easy ways to clear up a stuffy nose without medication.
+ <br>
+ <br>
+
+    
+Use a cool-mist humidifier in your child’s room. 
+This will help break up mucus. Be sure to carefully
+ clean the humidifier between uses to keep mold from 
+ developing in the machine.
+<br>
+<br>
+
+    
+Another option is using a saline nasal spray or drops, 
+which makes thin mucus easier to blow out or remove with 
+a bulb syringe. This is especially helpful before feeding and bedtime.
+<br>
+<br>
+
+</p>
+
+<br>
+<br>
+<h1>Loosen the cough </h1> 
+<p>
+  <br>
+
+
+If your child is over 1 year old, try giving honey for a cough instead of medication.
+ You can give 2 to 5 milliliters (mL) of honey a few times during the day.
+<br>
+<br>
+
+    
+StudiesTrusted Source show that honey is safer and likely more effective than cough
+ medicines for children over 1 year old. You shouldn’t give honey to children younger
+  than a year old due to the risk of botulism
+<br>
+<br>
+
+</p>
+<h1> Promote rest </h1>
+<p>
+  <br>
+
+
+Extra rest can help your child recover faster.
+<br>
+<br>
+
+    
+Your child may be very hot due to fever. 
+Dress them comfortably and avoid heavy blankets 
+or excessive layers that could make them feel hotter.
+ A lukewarm bath can also help them cool off and wind
+  down before taking a nap or going to sleep for the night.
+<br>
+<br>
+
+</p>
+<br>
+<br>
+<h1> Know what to give and when </h1>
+<p>
+<br>
+<br>
+
+Adults can easily take cold and cough medications, but the Food and Drug Administration
+ (FDA)Trusted Source recommends against children under age 2 taking over-the-counter 
+ (OTC) cold and cough medications.
+ <br>
+ <br>
+
+
+If your child has a fever or symptoms of a cold, 
+and is under age 2, call their pediatrician to determine 
+first if you need to give any medication,
+ and how much you need to administer.
+ <br>
+ <br>
+
+    
+Remember that a fever is the body’s way of fighting off an infection.
+ When your child has a low-grade fever, this doesn’t always need
+  to be controlled with OTC medications.
+<br>
+<br>
+
+    
+Call your child’s pediatrician first to find out if your child
+ needs medication. If it’s recommended that they take medication,
+  remember to check the dosing information when 
+  using either children’s or infant acetaminophen
+   (Tylenol), as they may be different.
+<br>
+<br>
+
+    
+Check the label on the bottle for the concentration of 
+acetaminophen. Let your child’s pediatrician know what 
+type you’re giving your child, and make sure you understand
+ how many milliliters or half-milliliters you should give them.
+ <br>
+ <br>
+
+    
+If your child is over 6 months old, you may also give ibuprofen to help control fever or pain.
+<br>
+<br>
+
+    
+You may find it difficult to measure out medications 
+in the cups that are included with the bottle. If you’re 
+concerned about using the provided measuring cup, talk to
+ your local pharmacist. Many pharmacies can provide measuring 
+ syringes that are more precise.
+ <br>
+ <br>
+
+
+Your child’s pediatrician may recommend giving multiple 
+medications at one time, such as antihistamines, decongestants, 
+and pain relievers. If this is the case, make sure you read 
+the labels of all medications carefully, to avoid accidental
+ overdose. For example, some decongestants include the pain reliever acetaminophen.
+ <br>
+ <br>
+
+    
+Your child could get very sick if they take too much acetaminophen, 
+such as a decongestant with acetaminophen, and a separate 
+medication with acetaminophen. Make sure to write down which
+medication you gave and the time you gave it so that you don’t give too much.
+<br>
+<br>
+ 
+    
+Remember that you should never give aspirin to a child
+ who is 18 years old or younger. Aspirin can cause a rare
+  disorder known as Reye’s syndrome in children.
+<br>
+<br>
+ 
+</p>
+<h1> See your childs docter </h1>
+<p>
+<br>
+
+Sometimes even the best at-home care isn’t enough to help your 
+little one make a full recovery. Call your doctor right away if your child:
+<br>
+<br>
+
+
+1. has a fever greater than 101°F (38°C) for more than two days, or a fever of 
+104°F (40°C) or higher for any amount of time
+<br>
+2. 
+has a fever of 100.4°F (38°C) or higher and is under 3 months old <br> 
+3. 
+has a fever that doesn’t get better after taking acetaminophen or ibuprofen<br>
+4.
+seems unusually drowsy or lethargic<br>
+5.
+won’t eat or drink<br>
+6.
+is wheezing or is short of breath<br>
+7.
+You should always call your child’s pediatrician if you have any concerns or 
+questions about their health.<br>
+
+</p>
+
+<h1>Surviving cold and flu season </h1>
+<p>
+<br>
+After your child recovers from a cold or flu,
+ it’s time to go into prevention mode. Wash all 
+ surfaces they came into contact with before or
+  during their sickness. Encourage your children 
+  and your other family members to wash their hands
+   regularly to keep future germs at bay.
+   <br>
+   <br>
+
+
+Teach your child not to share food, drinks,
+ or utensils when they eat to avoid spreading 
+ germs between them and their friends. Keep your
+  child out of daycare or school when they’re ill, 
+  especially when they have a fever.
+  <br>
+  <br>
+
+
+The good news about cold and flu season is that 
+it does come and go. Showing your child some loving 
+care and taking steps to put them on the mend can
+ help you make it through cold and flu season.
+ <br>
+ <br>
+
+</p>
+<br>
+<br>
+
+
+
+
+
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                   
+                   
+                      
+  
+  
+                         
+                
+          
+  
+ 
+</html>
+  
+            
+ 

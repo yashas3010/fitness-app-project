@@ -1,0 +1,678 @@
+<html>
+<head>
+<title> COUGH </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+  }
+        
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+      
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+        
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+        
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+        
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+        
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+        
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+        
+   
+      
+        
+       
+        
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+   flex-direction: column;
+    }
+}
+        
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+
+p{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 150%
+}
+.about {
+  border: 1px solid gray;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+        
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+
+<center><h1> COUGH </h1></center>
+
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="cough.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="co1.JPG" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="co2.JPG" style="width:100%">
+    
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+
+
+
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+</br>
+</br>
+</br>
+<h1>Coughing in toddlers </h1>
+<p>
+<br>
+
+Colds and coughs are common in young children. 
+Exposure to germs and fighting them helps kids 
+develop their immune systems. Helping your child
+ to feel comfortable and manage their symptoms can
+  help them get the rest they need to help them recover.
+  <br>
+  <br>
+
+
+A regular cough can last up to two weeks. Many coughs are
+ due to common viruses that have no cure. Unless a cough 
+ is extreme or comes with other, serious symptoms (see our list below), 
+ the best solution is to offer comfort measures at home.
+ <br>
+ <br>
+
+
+Cough treatment should aim to keep your child hydrated, 
+relaxed, and sleeping well. It’s not important to try to stop the coughing itself.
+<br>
+<br>
+
+
+Read on to discover toddler cough remedies you can try at home, 
+plus learn how to identify the signs that your child needs to see a doctor.
+<br>
+<br>
+
+</p>
+<h1>8 Home remedies</h1>
+<p>
+<br>
+
+Pay attention to the sound of your child’s cough to help you pick 
+the best home remedy and so that you can properly explain the cough to a doctor. For example:<br>
+<br>
+
+
+1. Deep cough coming from the chest. It’s likely due to mucus in the airways.<br>
+2. 
+Tight cough coming from the upper throat. It may be due to an infection 
+and swelling around the larynx (voice box).<br>
+3.
+Mild cough with sniffing. It could be due to post-nasal drip from the back of your child’s throat.<br>
+<br>
+
+</p>
+<h1>1. Use saline nasal drops </h1> 
+<p>
+<br> 
+
+You can buy these over-the-counter nasal drops at a pharmacy. Used with a 
+nasal syringe or nose blowing, saline drops can soften mucus to help remove it.
+<br>
+<br>
+
+
+Follow the instructions on the bottle to administer the nasal drops safely.
+<br>
+<br>
+
+
+If it’s impossible to get these little drops in your toddler’s nose,
+ sitting in a warm bath can also clear nasal passages and soften mucus. 
+ This helps prevent post-nasal drip.
+ <br>
+ <br>
+
+
+You may especially want to use saline drops before bed or in the middle
+ of the night if your toddler wakes up coughing.
+ <br>
+ <br>
+
+
+Saline nasal drops are generally considered safe.
+<br>
+<br>
+
+</p>
+
+<h1>Offer fluids </h1>
+<p><br>
+Staying hydrated is especially important when your child is sick.
+ Water helps the body fight illness and keeps airways moist and strong.
+ <br>
+ <br>
+
+
+One way to make sure your child is getting enough water 
+is to have them to drink one serving of water (8 ounces or 0.23 liters)
+ for each year of their life. For example, a one-year-old needs a minimum 
+ of one serving of water per day. A two-year-old needs two servings per day.
+ <br>
+ <br>
+ 
+  
+  If they’re refusing their usual milk or not eating much, younger children 
+  may need more water. Offer water freely (at least every hour or two), but 
+  don’t push them to drink it.
+  <br>
+  <br>
+
+  
+  In addition to enough water, you can offer popsicles
+   to increase fluids and soothe a sore throat.
+   <br>
+   <br>
+
+</p> 
+<h1>Offer honey </h1> 
+<p><br>
+Honey is a natural sweetener that can help soothe a sore throat.
+ Honey also hasTrusted Source antibacterial properties and may help fight infection.
+ <br>
+ <br>
+
+
+Honey isn’t safe for children who are under one year of age because there’s a risk of botulism.
+<br>
+<br>
+
+  
+For toddlers over one, you can give a spoonful of honey as often as you like,
+ but be aware of the sugar intake that comes with it.
+ <br>
+ <br>
+
+  
+You can also try mixing the honey in warm water to make it easier for your 
+child to consume the honey. This has the added benefit of helping to hydrate your child, too
+<br>
+<br>
+
+</p>
+<h1> Elevate your child head when sleeping </h1>
+<p>
+<br>
+Babies under one-and-a-half years old should not sleep with any pillows.
+<br>
+<br>
+
+
+Getting your older toddler to fall asleep with their head on one or more pillows
+ can be difficult, especially if your child is prone to moving around a lot while 
+ they’re asleep.
+ <br>
+ <br>
+
+
+An option other than using pillows in the crib or bed to elevate your
+ toddler’s head, is to try elevating one end of the mattress. You can 
+ do this by placing a rolled-up towel under the mattress on the end
+  where your child’s head rests.
+
+<br>
+<br>
+
+However, you should ask your pediatrician before attempting this.
+<br>
+<br>
+
+</p>
+
+<h1>Add moisture to your humidifier  </h1>
+<p><br>
+adding moisture to the air helps keep your child’s airways from 
+drying out and loosens mucus. This may ease coughing and congestion.
+<br>
+<br>
+
+
+When purchasing a humidifier, choose a cold air humidifier.
+ Cold air humidifiers are safer for children and as effective
+  as warm air humidifiers. If possible, use purified or 
+  distilled water to slow down mineral buildup inside the humidifier.
+  <br>
+  <br>
+
+  
+Run a humidifier all night in the room where your toddler sleeps. 
+During the day, run it in whatever room they’ll be spending the most time in.
+<br>
+<br>
+
+  
+If you don’t have a humidifier, you can try running a
+ hot shower and blocking the crack under the bathroom
+  door with a towel. Sit in the steamy bathroom to provide 
+  your child with some temporary relief.
+  <br>
+  <br>
+
+</p> 
+<h1>Take a walk in cold air </h1>
+<p>
+<br>
+If it’s cold outside, you can try this folk remedy
+ that uses the power of fresh air and exercise to relieve cough symptoms.
+ <br>
+ <br>
+
+
+Bundle your child up for a walk in cold weather and aim for just
+ a few minutes outside. You don’t want to exhaust your toddler, but 
+ there are many anecdotal stories of this helping coughs and shortening
+  the length of a common cold.
+  <br>
+  <br>
+
+
+Some parents even try opening the freezer door
+ and standing their toddler in front of it for a
+  few minutes if the child wakes up to a coughing
+   fit in the middle of the night.
+   <br>
+   <br>
+
+</p>
+<h1>Apple vapor rub </h1>
+<p>
+<br>
+It’s controversial whether vapor rubs that contain camphor or 
+menthol are beneficial. Caretakers have been rubbing this balm on
+ children’s chest and feet for generations, but one animal study
+  suggested it may actually increase mucus, which can dangerously
+   block tiny toddler airways.
+   <br>
+   <br>
+  
+
+Ask your pediatrician before using any vapor 
+rub. If you do use a vapor rub, applying it to
+ your child’s feet may be safer than on the chest 
+ where toddlers might touch it and then get it in their eyes.
+ <br>
+ <br>
+
+
+Never use vapor rub on babies under two, and never 
+put it on a child’s face or under their nose.
+<br>
+<br>
+
+</p> 
+<h1>Use essential oils </h1>
+<p>
+<br>
+These herbal products are gaining in popularity and some may
+ be effective at easing a cough or muscle aches when applied 
+ on the skin or diffused into the air.
+ <br>
+ <br>
+
+
+But always talk with your doctor before using essential oils.
+ Not all oils are safe for toddlers, and dosage isn’t regulated.
+ <br>
+ <br>
+
+</p> 
+
+<h1> can you offer cough medicine </h1>
+<p>
+  <br>
+  Cough medicine isn’t recommended for toddlers or any child under six.
+   It’s also not safe for young children, and it’s usually not effective
+    at relieving their symptoms.
+    <br>
+    <br>
+
+
+Any combination medicine for treating more than one symptom 
+is likely to give kids more side effects and increase the risk of overdose.
+<br>
+<br>
+
+
+Only offer cough drops to children four years old and older due to choking risks.
+<br>
+<br>
+
+
+For children over the age of one, you can try a homemade cough recipe of honey 
+dissolved in warm water and lemon juice.
+<br>
+<br>
+
+</p>
+
+<h1>Treatmemt from the docter  </h1>
+<p>
+  <br>
+  In some cases, you may need to see a doctor to treat your child’s cough.
+  <br>
+  <br>
+
+
+If your child has croup, their pediatrician may prescribe a steroid
+ to decrease inflammation. Croup causes a tight, barking cough that 
+ tends to occur along with a fever.
+ <br>
+ <br>
+
+
+The cough is usually worse at night. Steroids work 
+best when given right away and they can be given to 
+even very young toddlers.
+<br>
+<br>
+
+If your doctor determines that your toddler has a
+ bacterial infection, they may prescribe antibiotics.
+  It’s important to give your child the full treatment: 
+  don’t stop antibiotics just when symptoms go away
+  <br>
+<br>
+
+</p>
+
+<h1>Does my toddler need to see the docter </h1>
+<p>
+<br>
+If you’ve been treating your child’s cough at home for a
+ few days and it’s getting worse, call your pediatrician’s
+  office. The on-call nurse can give you more treatment ideas 
+  and help you decided whether or not to come in for a visit.
+  <br>
+  <br>
+
+Asthma and allergies can cause chronic coughs and 
+need to be treated by a doctor. Make an appointment 
+if you think your toddler’s cough is due to either
+ asthma or allergies.
+ <br>
+ <br>
+
+
+Signs that your child should see a doctor include:
+<br>
+
+
+1.cough that lasts more than 10 days<br>
+2. 
+fever over 100.4˚F (38˚C) for more than 3 days
+<br>
+3. 
+labored breathing
+<br>
+3.
+chest pain
+<br>
+4. 
+muscles pulling in around the neck or rib cage when breathing
+<br>
+5.
+tugging on the ears, which may be a sign of ear infection
+<br>
+6. 
+The doctor will observe your child’s breathing and, in some cases, 
+may use an X-ray to get a diagnosis.
+<br>
+<br>
+
+
+Go to an emergency room if your child:<br>
+
+1. is lethargic or seems very ill<br>
+2. showing signs of dehydration<br>
+3. has rapid breathing or can’t catch their breath<br>
+4. develops a blue tinge on the lips, nails, or skin, which is a
+ sign of a lack of oxygen<br>
+ <br>
+ <br>
+ 
+</p> 
+
+
+
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                   
+                   
+                      
+  
+  
+                         
+                
+          
+  
+</body>
+
+</html>
+  
+            
+ 

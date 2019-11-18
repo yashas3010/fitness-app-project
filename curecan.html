@@ -1,0 +1,944 @@
+<html>
+<head>
+<title> PREVENT CANCER      </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+   
+    
+
+
+  
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> TIPS TO PREVENT CANCER </h1></center>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="can.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="can1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="can2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+
+<h1>13 Foods That Could Lower Your Risk of Cancer </h1>
+<p>
+<br>
+What you eat can drastically affect many aspects of your health,
+ including your risk of developing chronic diseases like heart disease, diabetes and cancer.
+ <br>
+ <br>
+
+
+The development of cancer, in particular, has been shown to be heavily
+ influenced by your diet.
+ <br>
+ <br>
+
+
+Many foods contain beneficial compounds that could help decrease
+ the growth of cancer.
+ <br>
+ <br>
+
+There are also several studies showing that a higher intake 
+of certain foods could be associated with a lower risk of the disease.
+<br>
+<br>
+
+
+This article will delve into the research and look at 13 foods that
+ may lower your risk of cancer.
+ <br>
+ <br>
+
+<b> 1. Broccoli </b>
+Broccoli contains sulforaphane, a plant compound found in cruciferous
+ vegetables that may have potent anticancer properties.
+ <br>
+ <br>
+
+
+One test-tube study showed that sulforaphane reduced the 
+size and number of breast cancer cells by up to 75% (1Trusted Source).
+<br>
+<br>
+
+
+Similarly, an animal study found that treating mice with
+ sulforaphane helped kill off prostate cancer cells and 
+ reduced tumor volume by more than 50% (2Trusted Source).
+ <br>
+ <br>
+
+
+Some studies have also found that a higher intake of
+ cruciferous vegetables like broccoli may be linked to a lower risk of colorectal cancer.
+ <br>
+ <br>
+
+
+One analysis of 35 studies showed that eating more cruciferous
+ vegetables was associated with a lower risk of colorectal and
+  colon cancer (3Trusted Source).
+  <br>
+  <br>
+
+Including broccoli with a few meals per week may come with
+ some cancer-fighting benefits.
+ <br>
+ <br>
+
+
+However, keep in mind that the available research hasn’t 
+looked directly at how broccoli may affect cancer in humans.
+<br>
+<br>
+
+
+Instead, it has been limited to test-tube, animal and 
+observational studies that either investigated the effects
+ of cruciferous vegetables, or the effects of a specific
+  compound in broccoli. Thus, more studies are needed.
+  <br>
+  <br>
+
+<b> 2. Carrot </b>
+Several studies have found that eating more carrots is
+ linked to a decreased risk of certain types of cancer.
+ <br>
+ <br>
+
+
+For example, an analysis looked at the results of five 
+studies and concluded that eating carrots may reduce the 
+risk of stomach cancer by up to 26% (4Trusted Source).
+<br>
+<br>
+
+
+Another study found that a higher intake of carrots was 
+associated with 18% lower odds of developing prostate cancer (5Trusted Source).
+<br>
+<br>
+
+
+One study analyzed the diets of 1,266 participants with 
+and without lung cancer. It found that current smokers who
+ did not eat carrots were three times as likely to develop
+  lung cancer, compared to those who ate carrots more than 
+  once per week (6Trusted Source).
+  <br>
+  <br>
+
+
+Try incorporating carrots into your diet as a healthy snack
+ or delicious side dish just a few times per week to increase
+  your intake and potentially reduce your risk of cancer.
+  <br>
+  <br>
+
+
+Still, remember that these studies show an association 
+between carrot consumption and cancer, but don’t account
+ for other factors that may play a role.
+ <br>
+ <br>
+
+<b>3. Beans </b>
+<br>
+<br>
+Beans are high in fiber, which some studies have
+ found may help protect against colorectal cancer 
+ (7Trusted Source, 8Trusted Source, 9Trusted Source).
+ <br>
+ <br>
+
+
+One study followed 1,905 people with a history of 
+colorectal tumors, and found that those who consumed
+ more cooked, dried beans tended to have a decreased 
+ risk of tumor recurrence (10Trusted Source).
+ <br>
+ <br>
+
+
+An animal study also found that feeding rats black 
+beans or navy beans and then inducing colon cancer 
+blocked the development of cancer cells by up to 75% (11Trusted Source).
+<br>
+<br>
+
+
+According to these results, eating a few servings
+ of beans each week may increase your fiber intake
+  and help lower the risk of developing cancer.
+  <br>
+  <br>
+
+
+However, the current research is limited to animal 
+studies and studies that show association but not 
+causation. More studies are needed to examine this in humans, specifically.
+<br>
+<br>
+
+<b> 4. Berries </b>
+<br>
+<br>
+Berries are high in anthocyanins, plant pigments that have
+ antioxidant properties and may be associated with a reduced risk of cancer.
+ <br>
+ <br>
+
+
+In one human study, 25 people with colorectal cancer were treated
+ with bilberry extract for seven days, which was found to reduce 
+ the growth of cancer cells by 7% (12Trusted Source).
+ <br>
+ <br>
+
+
+Another small study gave freeze-dried black raspberries
+ to patients with oral cancer and showed that it decreased
+  levels of certain markers associated with cancer progression (13Trusted Source).
+  <br>
+  <br>
+
+
+One animal study found that giving rats freeze-dried black raspberries
+ reduced esophageal tumor incidence by up to 54% and decreased the
+  number of tumors by up to 62% (14Trusted Source).
+  <br>
+  <br>
+
+
+Similarly, another animal study showed that giving rats a
+ berry extract was found to inhibit several biomarkers of cancer (15Trusted Source).
+ <br>
+ <br>
+
+
+Based on these findings, including a serving or two of berries 
+in your diet each day may help inhibit the development of cancer.
+<br>
+<br>
+
+
+Keep in mind that these are animal and observational studies 
+looking at the effects of a concentrated dose of berry extract, 
+and more human research is needed.
+<br>
+<br>
+
+<b>5. Cinnamon </b>
+<br>
+<br>
+Cinnamon is well-known for its health benefits, including
+ its ability to reduce blood sugar and ease inflammation
+  (16Trusted Source, 17Trusted Source).
+  <br>
+  <br>
+
+In addition, some test-tube and animal studies have 
+found that cinnamon may help block the spread of cancer cells.
+<br>
+<br>
+
+
+A test-tube study found that cinnamon extract was able 
+to decrease the spread of cancer cells and induce their death (18Trusted Source).
+<br>
+<br>
+
+
+Another test-tube study showed that cinnamon essential oil suppressed 
+the growth of head and neck cancer cells, and also significantly
+ reduced tumor size (19Trusted Source).
+ <br>
+ <br>
+
+
+An animal study also showed that cinnamon extract induced 
+cell death in tumor cells, and also decreased how much 
+tumors grew and spread (20Trusted Source).
+<br>
+<br>
+
+
+Including 1/2–1 teaspoon (2–4 grams) of cinnamon in
+ your diet per day may be beneficial in cancer 
+ prevention, and may come with other benefits as well, such 
+ as reduced blood sugar and decreased inflammation.
+ <br>
+<br>
+
+
+However, more studies are needed to understand how
+ cinnamon may affect cancer development in human
+ <br>
+ <br>
+
+<b> 6. Nuts </b>
+Research has found that eating nuts may be linked to a lower risk of certain types of cancer.<br>
+<Br>
+
+
+For instance, a study looked at the diets of 19,386 people and found 
+that eating a greater amount of nuts was associated with a decreased
+ risk of dying from cancer (21Trusted Source).
+ <br>
+ <br>
+
+
+Another study followed 30,708 participants for up to 30 years 
+and found that eating nuts regularly was associated with a decreased
+ risk of colorectal, pancreatic and endometrial cancers (22Trusted Source).
+ <br>
+ <br>
+
+
+Other studies have found that specific types of nuts may be linked 
+to a lower cancer risk.
+<br>
+<br>
+
+For example, Brazil nuts are high in selenium, which may help
+ protect against lung cancer in those with a low selenium status (23Trusted Source).
+ <br>
+ <br>
+
+
+Similarly, one animal study showed that feeding mice walnuts 
+decreased the growth rate of breast cancer cells by 80% and 
+reduced the number of tumors by 60% (24Trusted Source).
+<br>
+<br>
+
+
+These results suggest that adding a serving of nuts to your 
+diet each day may reduce your risk of developing cancer in the future.
+<br>
+<br>
+
+
+Still, more studies in humans are needed to determine whether 
+nuts are responsible for this association, or whether other factors are involved.
+<br>
+<br>
+<b> 7. OLive oil </b>
+Olive oil is loaded with health benefits, so it’s no wonder it’s
+ one of the staples of the Mediterranean diet.
+ <br>
+ <br>
+
+
+Several studies have even found that a higher intake
+ of olive oil may help protect against cancer.
+ <br>
+ <br>
+
+
+One massive review made up of 19 studies showed that people 
+who consumed the greatest amount of olive oil had a lower 
+risk of developing breast cancer and cancer of the digestive 
+system than those with the lowest intake (25Trusted Source).
+
+<br>
+<br>
+
+Another study looked at the cancer rates in 28 countries
+ around the world and found that areas with a higher intake
+  of olive oil had decreased rates of colorectal cancer (26Trusted Source).
+  <br>
+  <br>
+
+
+Swapping out other oils in your diet for olive oil is a 
+simple way to take advantage of its health benefits. You 
+can drizzle it over salads and cooked vegetables, or try 
+using it in your marinades for meat, fish or poultry.
+<br>
+<br>
+
+
+Though these studies show that there may be an association 
+between olive oil intake and cancer, there are likely other
+ factors involved as well. More studies are needed to look
+  at the direct effects of olive oil on cancer in people.
+  <br>
+  <br>
+
+<b>8. Turmeric </b>
+Turmeric is a spice well-known for its health-promoting properties.
+ Curcumin, its active ingredient, is a chemical with anti-inflammatory,
+  antioxidant and even anticancer effects.
+  <br>
+  <br>
+
+
+One study looked at the effects of curcumin on 44 patients with 
+lesions in the colon that could have become cancerous. After 30 
+days, 4 grams of curcumin daily reduced the number of lesions
+ present by 40% (27Trusted Source).
+ <br>
+ <br>
+
+
+
+In a test-tube study, curcumin was also found to decrease 
+the spread of colon cancer cells by targeting a specific 
+enzyme related to cancer growth (28Trusted Source).
+<br>
+<br>
+
+
+Another test-tube study showed that curcumin helped kill 
+off head and neck cancer cells (29Trusted Source).
+<br>
+<br>
+
+
+Curcumin has also been shown to be effective in slowing the
+ growth of lung, breast and prostate cancer cells in other
+  test-tube studies (30Trusted Source, 31Trusted Source, 32Trusted Source).
+  <br>
+  <br>
+
+
+For the best results, aim for at least 1/2–3 teaspoons 
+(1–3 grams) of ground turmeric per day. Use it as a ground spice to
+ add flavor to foods, and pair it with black pepper to help boost its absorption.
+ <br>
+ <br>
+
+<b>9. Citrus fruits </b>
+<br>
+<br>
+Eating citrus fruits such as lemons, limes, grapefruits
+ and oranges has been associated with a lower risk of cancer in some studies.
+ <br>
+ <br>
+
+
+One large study found that participants who ate a higher
+ amount of citrus fruits had a lower risk of developing
+ cancers of the digestive and upper respiratory tracts (33Trusted Source).
+ <br>
+ <br>
+
+
+A review looking at nine studies also found that a greater 
+intake of citrus fruits was linked to a reduced risk of pancreatic cancer (34Trusted Source).
+<br>
+<br>
+
+
+Finally, a review of 14 studies showed that a high intake,
+ or at least three servings per week, of citrus fruit reduced
+  the risk of stomach cancer by 28% (35Trusted Source).
+  <br>
+  <br>
+
+
+These studies suggest that including a few servings of citrus
+ fruits in your diet each week may lower your risk of developing certain types of cancer.
+ <br>
+ <br>
+
+
+Keep in mind that these studies don’t account for other factors
+ that may be involved. More studies are needed on how citrus 
+ fruits specifically affect cancer development.
+ <br>
+
+<b>10. Flax seed </b>
+<br>
+<br>
+
+High in fiber as well as heart-healthy fats, flaxseed
+ can be a healthy addition to your diet.
+ <br>
+ <br>
+
+
+Some research has shown that it may even help decrease 
+cancer growth and help kill off cancer cells.
+<br>
+<br>
+
+
+In one study, 32 women with breast cancer received 
+either a flaxseed muffin daily or a placebo for over a month.
+<br>
+<br>
+
+
+At the end of the study, the flaxseed group had decreased
+ levels of specific markers that measure tumor growth, as
+  well as an increase in cancer cell death (36Trusted Source).
+  <br>
+  <br>
+
+
+In another study, 161 men with prostate cancer were treated 
+with flaxseed, which was found to reduce the growth and spread 
+of cancer cells (37Trusted Source).
+<br>
+<br>
+
+
+Flaxseed is high in fiber, which other studies have 
+found to be protective against colorectal cancer (7Trusted Source, 
+8Trusted Source, 9Trusted Source).
+<br>
+<br>
+
+
+Try adding one tablespoon (10 grams) of ground flaxseed
+ into your diet each day by mixing it into smoothies,
+  sprinkling it over cereal and yogurt, or adding it to your favorite baked goods
+  <br>
+  <br>
+
+<b>11. Tomatoes </b>
+<br>
+<br>
+Lycopene is a compound found in tomatoes that is responsible
+ for its vibrant red color as well as its anticancer properties.
+ <br>
+ <br>
+
+
+Several studies have found that an increased intake of lycopene 
+and tomatoes could lead to a reduced risk of prostate cancer.
+<br>
+<br>
+
+
+A review of 17 studies also found that a higher intake of raw
+ tomatoes, cooked tomatoes and lycopene were all associated with
+  a reduced risk of prostate cancer (38Trusted Source).
+  <br>
+  <br>
+
+
+Another study of 47,365 people found that a greater intake 
+of tomato sauce, in particular, was linked to a lower risk
+ of developing prostate cancer (39Trusted Source).
+ <br>
+ <br>
+
+
+To help increase your intake, include a serving or two
+ of tomatoes in your diet each day by adding them to sandwiches,
+  salads, sauces or pasta dishes.
+  <br>
+  <br>
+
+
+Still, remember that these studies show there may be an 
+association between eating tomatoes and a reduced risk 
+of prostate cancer, but they don’t account for other factors that could be involved.
+<br>
+<br>
+<b> 12. Garlic </b>
+<br>
+<br>
+
+The active component in garlic is allicin, a compound that has been
+ shown to kill off cancer cells in multiple test-tube studies
+  (40Trusted Source, 41Trusted Source, 42Trusted Source).
+  <br>
+  <br>
+
+
+Several studies have found an association between garlic intake
+ and a lower risk of certain types of cancer.
+ <br>
+ <br>
+
+
+One study of 543,220 participants found that those who ate
+ lots of Allium vegetables, such as garlic, onions, leeks 
+ and shallots, had a lower risk of stomach cancer than those 
+ who rarely consumed them (43Trusted Source).
+ <br>
+ <br>
+
+
+A study of 471 men showed that a higher intake of garlic
+ was associated with a reduced risk of prostate cancer (44Trusted Source).
+ <br>
+ <br>
+
+
+Another study found that participants who ate lots of garlic, as well as 
+fruit, deep yellow vegetables, dark green vegetables and onions, were 
+less likely to develop colorectal tumors. However, this study did not 
+isolate the effects of garlic (45Trusted Source).
+<br>
+<br>
+
+
+Based on these findings, including 2–5 grams (approximately one clove)
+ of fresh garlic into your diet per day can help you take advantage
+  of its health-promoting properties.
+
+<br>
+<br>
+
+However, despite the promising results showing an association 
+between garlic and a reduced risk of cancer, more studies are 
+needed to examine whether other factors play a role.
+<br>
+<br>
+
+<b>13. Fatty fish </b>
+<br>
+<br>
+Some research suggests that including a few servings of fish in 
+your diet each week may reduce your risk of cancer.
+<br>
+<br>
+
+
+One large study showed that a higher intake of fish was associated 
+with a lower risk of digestive tract cancer (46Trusted Source).
+<br>
+<br>
+
+
+Another study that followed 478,040 adults found that eating 
+more fish decreased the risk of developing colorectal cancer,
+ while red and processed meats actually increased the risk (47Trusted Source).
+ <br>
+ <br>
+
+
+In particular, fatty fish like salmon, mackerel and anchovies 
+contain important nutrients such as vitamin D and omega-3 fatty
+ acids that have been linked to a lower risk of cancer.
+ <br>
+ <br>
+
+
+For example, having adequate levels of vitamin D is 
+believed to protect against and reduce the risk of cancer (48Trusted Source).
+<br>
+<br>
+
+
+In addition, omega-3 fatty acids are thought to block the 
+development of the disease (49Trusted Source).
+<br>
+<br>
+
+
+Aim for two servings of fatty fish per week to get a
+ hearty dose of omega-3 fatty acids and vitamin D, and 
+ to maximize the potential health benefits of these nutrients.
+ <br>
+ <br>
+
+
+Still, more research is needed to determine how fatty fish
+ consumption may directly influence the risk of cancer in humans.
+ <br>
+ <br>
+
+</p>
+
+
+
+
+    
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

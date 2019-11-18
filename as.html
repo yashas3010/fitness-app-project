@@ -1,0 +1,595 @@
+<html>
+<head>
+<title> Asthama </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+    
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+   
+    
+
+
+  
+    
+      
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1>OVERVIEW </h1></center>
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="as.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="as1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="as2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+
+<p>
+<br>
+Asthma is an inflammatory disease of the airways to the lungs. 
+It makes breathing difficult and can make some physical activities 
+difficult or even impossible.
+<br>
+<br>
+
+
+According to the Centers for Disease Control and Prevention 
+(CDC), approximately 27 million AmericansTrusted Source have asthma.
+ It’s the most common chronic condition among American children:
+  1 child out of every 12Trusted Source has asthma.
+  <br>
+  <br>
+
+
+
+To understand asthma, you need to understand a little about what happens when you breathe.
+<br>
+<br>
+
+
+Normally, with every breath you take, air goes through your 
+nose and down into your throat, into your airways, eventually
+ making it to your lungs. There are lots of small air passages
+  in your lungs that help deliver oxygen from the air into your bloodstream.
+  <br>
+  <br>
+
+Asthma symptoms occur when the lining of your airways 
+swell and the muscles around them tighten. Mucus then 
+fills the airways, further reducing the amount of air that can pass through.
+<br>
+<br>
+
+
+These conditions then bring on an asthma “attack,” the coughing and
+ tightness in your chest that is typical of asthma.
+ <br>
+ <br>
+</p>
+
+<h1> Asthama Symptoms </h1>
+<p>
+<br>
+
+Symptoms of asthma include:
+<br>
+
+1. coughing, especially at night, when laughing, or during exercise <br>
+2. wheezing, a squealing or whistling sound made when breathing<br>
+3. tightness in the chest<br>
+4. shortness of breath<br>
+5. fatigue<br>
+<br>
+
+The type of asthma that you have can determine which symptoms you experience.
+<br>
+<br>
+
+
+Not everyone with asthma will experience these particular symptoms.
+ If you think the symptoms you’re experiencing could be a sign of a
+  condition such as asthma, make an appointment to see your doctor.
+  <br>
+  <br>
+
+
+The first indication that you have asthma may not be an actual 
+asthma attack. Discover some early symptoms of asthma you may experience instead.
+<br>
+<br>
+
+</p>
+       
+
+<h1>Causes of Asthama </h1>
+<p>
+<br>
+No single cause has been identified for asthma. 
+Instead, researchers believe that the breathing
+ condition is caused by a variety of factors. 
+ These factors include:
+ <br>
+ <br>
+
+
+
+1. <b>Genetics.</b> If a parent has asthma, you’re more likely to develop it.<br>
+2. <b>History of viral infections</b>. People with a history of viral
+ infections during childhood are more likely to develop the condition.<br>
+3. <b>Hygiene hypothesis.</b> This hypothesis proposes that babies aren’t
+ exposed to enough bacteria in their early months and years. Therefore,
+  their immune systems don’t become strong enough to fight off asthma
+   and other conditions.<br>
+4. <b>Early allergen exposure. </b> Frequent contact with possible allergens
+ and irritants may increase your risk for developing asthma.
+ <br>
+ <br>
+
+</p> 
+
+<h1>Asthama triggers  </h1>
+<p>
+<br>
+Certain conditions and environments may also trigger symptoms of asthma. These triggers include:
+<br>
+<br>
+
+
+1. <b>Illness.</b> Respiratory illnesses such as the flu and pneumonia can trigger asthma attacks.<br>
+
+2. <b>Exercise. </b> Increased movement may make breathing more difficult.<br>
+
+3. <b>Irritants in the air. </b> People with asthma may be sensitive to irritants
+ such as chemical fumes, strong odors, and smoke.<br>
+4. <b>Allergens. </b> Animal dander, dust mites, and pollen are just
+ a few examples of allergens that can trigger symptoms.
+ <br>
+
+5. <b>Extreme weather conditions. </b> Conditions such as very high humidity
+ or low temperatures may trigger asthma.<br>
+
+6. <b>Emotions.</b> Shouting, laughing, and crying may trigger an attack.
+<br>
+<br>
+</p>
+
+
+<h1>Treatment of asthma</h1>
+<p>
+<br>
+
+Treatments for asthma fall into three primary categories: breathing exercises,
+ rescue or first aid treatments, and long-term asthma control medications.
+ <br>
+ <br>
+
+
+Your doctor will determine the right treatment or combination 
+of treatments for you based on the type of asthma you have, your age, and your triggers.
+<br>
+<br>
+
+
+1. <b>Breathing exercises</b>
+<br>
+<br>
+
+These exercises can help you get more air into and out of your lungs. 
+Over time, this may help increase lung capacity and cut down on severe
+ asthma symptoms. Your doctor or an occupational therapist can help you
+  learn these breathing exercises for asthma.
+  <br>
+  <br>
+
+
+2. <b>Rescue or first aid treatments </b>
+<br>
+<br>
+
+These medications should only be used in the event of an asthma attack.
+ They provide quick relief to help you breathe again. Examples include:
+ <br>
+ <br>
+
+1. rescue inhalers and nebulizers, which are used with medicine that needs to be inhaled deep into the lungs<br>
+2. bronchodilators, which work to relax the tightened muscles in your lung<br>
+3. anti-inflammatories, which target inflammation in your lungs that could be preventing your breathing<br>
+<br>
+
+If you think that someone you know is having an asthma attack, you should sit them upright and assist them
+ in using their rescue inhaler or nebulizer. Two to six puffs of medication should help ease their symptoms.<br>
+ <br>
+
+
+If symptoms persist for more than 20 minutes, and a second round of medication doesn’t help, seek medical attention.
+<br>
+<br>
+
+
+<b>Long-term asthma control mediations </b>
+<br>
+<br>
+
+These medications should be taken daily to prevent symptoms. 
+Some rescue treatments, such as inhalers and nebulizers, can
+ be used daily. However, your doctor will need to adjust your dosages.
+ <br>
+ <br>
+
+
+Several types of medications are used to treat asthma.
+ Read more about each one to understand their risks and benefits.
+ <br>
+ <br>
+
+</p>
+        
+
+<h1>Asthama home remedies  </h1>
+<p>
+<br>
+In general, over-the-counter (OTC) medicines and alternative 
+remedies aren’t encouraged as treatments for asthma. If not treated properly, asthma can be life-threatening.
+<br>
+<br>
+
+
+However, these home remedies may help stop symptoms from escalating and may be effective in an emergency:
+<br>
+<br>
+
+1. Coffee or caffeinated tea
+<br>
+<br>
+
+A chemical in caffeine acts similarly to the asthma drug theophylline.
+It opens up airways and may ease symptoms of asthma for up to four hours.
+
+<br>
+<br>
+
+Purchase coffee and tea online.
+
+<br>
+<br>
+
+
+2. ssential oils<br><br>
+Inhaling eucalyptus essential oil may ease breathing difficulties brought on by asthma. 
+Lavender and basil essential oils also show promise. However, for some individuals,
+ inhaling essential oils may make asthma worse. Strong smells and chemicalIn general, over-the-counter (OTC) medicines and alternative remedies aren’t encouraged as treatments for asthma. If not treated properly, asthma can be life-threatening.
+
+However, these home remedies may help stop symptoms from escalating and may be effective in an emergency:
+
+Coffee or caffeinated tea
+A chemical in caffeine acts similarly to the asthma drug theophylline. It opens up airways and may ease symptoms of asthma for up to four hours.
+
+Purchase coffee and tea online.
+
+Essential oils
+Inhaling eucalyptus essential oil may ease breathing difficulties brought on by asthma. Lavender and basil essential oils also show promise. However, for some individuals, inhaling essential oils may make asthma worse. Strong smells and chemicals can trigger asthma or worsen symptoms.
+
+Find eucalyptus, lavender, and basil essential oils online.
+
+Mustard oil
+This fatty oil, made from pressed mustard seeds, can be massaged into the skin to help open airways. Mustard oil is different than mustard essential oil, a medicinal oil which shouldn’t be applied directly to the skin.
+
+Shop for mustard oil.
+
+Other home remedies may help ease symptoms of an asthma attack. Read about even more home remedies that can allow you to breathe more efficiently.s can trigger asthma or worsen symptoms.
+ <br>
+ <br>
+
+
+Find eucalyptus, lavender, and basil essential oils online.
+<br>
+<br>
+
+
+3. Mustard oil<br><br>
+
+This fatty oil, made from pressed mustard seeds, can be massaged into the 
+skin to help open airways. Mustard oil is different than mustard essential
+ oil, a medicinal oil which shouldn’t be applied directly to the skin.
+ <br>
+ <br>
+
+
+4. Shop for mustard oil.<br><br>
+
+
+Other home remedies may help ease symptoms of an asthma attack.
+ Read about even more home remedies that can allow you to breathe more efficiently.
+ <br>
+ <br>
+</p>
+
+
+    
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+
+</html>
+        
+                    
+        
+    
