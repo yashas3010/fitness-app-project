@@ -1,0 +1,375 @@
+<html>
+<head>
+<title> QUIK DRINKING </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+    
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+
+
+
+
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> REASON WHY YOU NEED TO QUIT DRINKING </h1></center>
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="drink.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="drink1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="drink2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+
+<h1>Here’s What Happens When You Quit Drinking Alcohol for a Month</h1>
+<p>
+<br>
+If drinking less is your New Year’s resolution, 
+you aren’t alone. A Greek (as in fraternity, not Athens)
+ guy in college once swore to me on January 2nd that he’d
+  go sober for 365 days. Incredulous, I asked how that was 
+  possible, and he answered: “Well, not in a row.”
+  <br>
+  <br>
+
+
+Americans like to drink. Not as much as Canadians and 
+RussiansTrusted Source, but still a lot. The good news:
+ A recent study published in Preventing Chronic DiseaseTrusted
+  Sourcefound that most Americans who drink “excessively”
+   (15 or more drinks a week for men; 8 or more drinks a week for women)
+    aren’t alcohol dependent. Meaning they aren’t alcoholics.
+     Meaning if you wanted to stay sober for one month,
+      odds are it wouldn’t lead to withdrawal. Sure,
+       you might suffer from fear of missing out (FOMO),
+        but you shouldn’t lose control of your bodily functions.
+<br>
+<br>
+
+
+But how good is one month of sobriety for your health anyway? 
+The staff of the New Scientistattempted to answer that question,
+ and found that avoiding alcohol for a few weeks may
+  actually do wonders for your body.
+  <br>
+  <br>
+
+</p>
+
+<h1>The Study</h1>
+<p>
+<br>
+First: 14 staff members gave blood samples
+ and had ultrasounds done to measure the amount
+  of fat in their livers. Next, 10 of them abstained
+   from alcohol for five weeks, while four continued to 
+   drink normally. At the end of five weeks, they all went
+    back to the hospital to repeat the blood work and ultrasounds
+<br>
+<br>
+
+</p>
+<h1>Conclusion </h1>
+<p>
+<br>
+Giving up alcohol for one month may significantly improve your health, 
+though more research is required. The only real downside: Those
+ involved in the study felt less social. So if you’re looking for
+  an excuse to binge watch Netflix while possibly losing weight, 
+  lowering your cholesterol
+, and sleeping better, try going dry. Then share your results
+ in the comments section below.
+<br>
+<br>
+</p>
+
+
+    
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+
+</html>
+        
+                    
+        
+    

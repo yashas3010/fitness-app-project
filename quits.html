@@ -1,0 +1,557 @@
+<html>
+<head>
+<title> QUIK SMOKING </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+  }
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+    
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> REASON WHY YOU NEED TO QUIT SMOKING</h1></center>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="smoke.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="smoke1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="smoke2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<p>
+<br>
+If you’re a heavy smoker and quit now, within 
+five years you could see a significant reduction
+ in your risk for cardiovascular disease.
+<br>
+<br>
+
+
+But you’ll still have more risk for cardiovascular
+ disease than someone who never smoked.
+ <br>
+ <br>
+
+
+That’s according to a new studyTrusted Source published in JAMA.
+<br>
+<br>
+
+
+The retrospective analysis looked at 8,770 people, including
+ 2,371 who had smoked 20 or more “pack years.” That’s the same 
+ as smoking a pack of cigarettes a day for 20 years.
+<br>
+<br>
+
+
+The average follow-up time was 26 years. In that time,
+ 2,435 of the participants had a first cardiovascular 
+ event, such as heart attack, stroke, heart failure, or cardiovascular death.
+<br>
+<br>
+
+
+Heavy smokers accounted for 1,095 of those events.
+<br>
+<br>
+
+
+Compared with current smokers, quitting within five years
+ was associated with a lower rate of cardiovascular events.
+ <br>
+ <br>
+
+
+For heavy smokers, there’s still an increased cardiovascular
+ risk for 10 to 15 years or more.
+ <br>
+ <br>
+
+
+The study authors note the investigation included mostly
+ white people of European ancestry. They also lacked
+  information on secondhand tobacco smoke exposure or use 
+  of other types of tobacco among the study participants.
+  <br>
+  <br>
+
+</p>
+  
+<h1>Smoking and cardio vascular risk </h1>
+<p>
+<br>
+Dr. Srilakshmi Vallabhaneni is a senior cardiology
+ fellow at St. Luke’s University Health Network in Bethlehem, Pennsylvania.
+<br>
+<br>
+
+
+“Smoking is a well-known risk factor for lung problems,” 
+she told Healthline. “The heart hasn’t been highlighted as
+ much. It was a small sample size, but large enough to answer 
+ the question about cardiovascular risks five years after quitting smoking.”
+ <br>
+ <br>
+
+
+Warning signs of cardiovascular problems include shortness of breath,
+ chest pain, and leg pain when you walk, she explains.
+ <br>
+ <br>
+
+
+Although more data is needed, Vallabhaneni says cardiovascular 
+risk for pipe and cigar smokers is higher than for nonsmokers,
+ although not as high as for heavy cigarette smokers.
+ <br>
+ <br>
+
+
+She also notes that smoking marijuana can affect the heart 
+rhythm and increase the risk of heart attack.
+<br>
+<br>
+
+
+While the new study focused on heavy cigarette smokers, 
+Dr. Robert Greenfield cautions that any amount of smoking is a problem.
+<br>
+<br>
+
+
+Greenfield is a double board-certified cardiologist 
+and lipidologist and medical director of noninvasive 
+cardiology and cardiac rehabilitation at MemorialCare 
+Heart & Vascular Institute at Orange Coast Medical Center in California.
+<br>
+<br>
+
+
+“Every time you put a cigarette in your mouth, whether you 
+inhale or not, you’re sucking in carbon monoxide,” Greenfield told Healthline.
+<br>
+<br>
+
+
+“It gets into the bloodstream, where it displaces oxygen
+ in red blood cells. Carbon monoxide damages the lining of 
+ arteries and affects cholesterol circulation, creating more plaque,” he said.
+
+ <br>
+ <br>
+
+“If someone is smoking, they should assume a negative impact on
+ the body. And if you’re a nonsmoker because you quit last year, 
+ you may be underestimating your risk,” Greenfield said.
+<br>
+<br>
+
+He notes that cardiovascular disease is complex and involves
+ other risk factors, including diet, stress, and family history.
+ <br>
+ <br>
+
+
+The study shows that if you’ve been a heavy smoker, you have
+ to be even more vigilant about staying healthy, according to Greenfield.
+ <br>
+ <br>
+
+
+“The sooner you can stop smoking, the better. But it’s not as 
+simple as stopping and in five years you’re OK. The cardiology
+ community should be looking at ex-smokers differently and 
+ be more diligent in talking to patients,” he said.
+ <br>
+ <br>
+
+</p>
+
+<h1>Breaking the habit </h1> 
+<p>
+<br>
+Vallabhaneni says that understanding the negative effects 
+of smoking can give smokers more motivation to quit.
+<br>
+<br>
+
+
+In addition to smoking cessation programs and medications,
+ counseling by doctors is crucial.
+ <br>
+ <br>
+
+
+Quitting cold turkey is hard, so she advises heavy 
+smokers to create smaller goals.
+<br>
+<br>
+
+
+“If you smoke 10 cigarettes a day, maybe cut down to
+ eight, then six. Cutting down a little every few weeks 
+ seems to work really well. And patients can relapse over
+  time, so we need to reinforce that when they see their
+   primary care physician or cardiologist if they have a
+    heart problem,” she said.
+    <br>
+    <br>
+
+Vallabhaneni recommends that smokers and ex-smokers take
+ care to monitor and manage high blood pressure, high cholesterol, and diabetes.
+<br>
+<br>
+
+
+“Also stay active and exercise. We recommend 30 minutes a day,
+ five days a week, even if it’s just walking. Do what you like
+  to do, but stay active,” she said.
+<br>
+<br>
+
+
+“Public policy is also important. Smoking restrictions
+ in public places and even at home can help reinforce 
+ this and are very effective in reducing smoking,” Vallabhaneni added.
+<br>
+<br>
+
+
+The Centers for Disease Control and Prevention offers
+ more information on how to quit smokingTrusted Source.
+<br>
+<br>
+
+</p>
+<h1>Smoking prevention </h1>
+<p>
+<br>
+“The good news is that we’re all living longer now, but
+ a lot of people are not living healthier,” Greenfield 
+ said. “The value of this study is that it shows that 
+ the things we do to our body now stay with us. It doesn’t 
+ lways go away because we stop smoking.”
+ <br>
+ <br>
+
+
+Greenfield advises young people to think of what they
+ do now as an investment in their future.
+ <br>
+ <br>
+
+
+“Smoking changes the body,” he said. “We can paint a 
+picture of what could happen. I wish I could take young
+ smokers into the intensive care unit at the hospital to
+  show them people on ventilators. We’ve done a good job
+   with some of the scary advertising for not smoking.”
+   <br>
+   <br>
+
+
+Greenfield explains that medicines prescribed to treat high
+ blood pressure and high cholesterol can be less effective 
+ for smokers.
+ <br>
+ <br>
+
+“Lifestyle is the best medicine we can prescribe. 
+We try to prevent risk factors rather than treat once 
+there’s a problem. We have to sit down with young people
+ and have a conversation. It’s the right thing to do,” Greenfield said.
+ <br>
+ <br>
+
+</p> 
+
+        
+
+    
+    
+    
+    
+    
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

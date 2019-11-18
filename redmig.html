@@ -1,0 +1,672 @@
+<html>
+<head>
+<title>MIGRANE         </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+box-sizing: border-box;
+}
+                
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+                
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+   
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> EVERYTHING YOU NEED TO KNOW ABOUT MIGRANE </h1></center>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="mig.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="mig1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="mig2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+<h1>What is Migrane?</h1>
+<p>
+<br>
+Migraine is a neurological condition that can 
+cause multiple symptoms. It’s frequently characterized by 
+intense, debilitating headaches. Symptoms may include nausea,
+ vomiting, difficulty speaking, numbness or tingling, and 
+ sensitivity to light and sound. Migraines often run in families and affect all ages.
+ <br>
+ <br>
+
+
+The diagnosis of migraine headaches is determined based on clinical 
+history, reported symptoms, and by ruling out other causes. The most 
+common categories of migraine headache are those without aura
+ (previously known as common migraines) and those with aura 
+ (previously known as classic migraines).
+ <br>
+ <br>
+
+
+Migraines can begin in childhood or may not occur until 
+early adulthood. Women are more likely than men to have
+ migraines. Family history is one of the most common risk factors for having migraines.
+ <br>
+ <br>
+
+
+Migraines are different from other headaches. Find out
+ about different types of headaches and how to tell if
+  your headaches might be migraines.
+  <br>
+  <br>
+</p>
+    
+<h1>Migrane symptoms </h1>
+<p>
+<br>
+Migraine symptoms may begin one to two days before
+the headache itself. This is known as the prodrome
+ stage. Symptoms during this stage can include:
+ <br>
+
+
+1. food cravings<br>
+2. depression<br>
+3. fatigue or low energy<br>
+4. frequent yawning<br>
+5. hyperactivity<br>
+6. irritability<br>
+7. neck stiffness<br>
+<br>
+ In migraine with aura, the aura occurs after the prodrome stage.
+ During an aura, you may have problems with your vision, sensation, 
+ movement, and speech. Examples of these problems include:
+ <br>
+ <br>
+
+
+1. difficulty speaking clearly<br>
+2. feeling a prickling or tingling sensation in your face, arms, or legs<br>
+3. seeing shapes, light flashes, or bright spots<br>
+4. temporarily losing your vision<br>
+<br>
+
+ The next phase is known as the attack phase. This 
+is the most acute or severe of the phases when the
+ actual migraine pain occurs. In some people, this 
+ can overlap or occur during an aura. Attack phase
+  symptoms can last anywhere from hours to days. 
+  <br>
+  <br>
+
+  Symptoms of a migraine can vary from person to person. Some symptoms may include:
+  <br>
+
+
+1. increased sensitivity to light and sound<br>
+2. nausea<br>
+3. dizziness or feeling faint<br>
+4. pain on one side of your head, either on the left side, 
+right side, front, or back, or in your temples
+<br>
+5. pulsing and throbbing head pain<br>
+6. vomiting<br>
+<br>
+
+After the attack phase, a person will often experience 
+the postdrome phase. During this phase, there are usually 
+changes in mood and feelings. These can range from feeling 
+euphoric and extremely happy, to feeling very fatigued and 
+apathetic. A mild, dull headache may persist.
+<br>
+<br>
+
+The length and intensity of these phases can occur 
+to different degrees in different people. Sometimes,
+ a phase is skipped and it’s possible that a migraine 
+ attack occurs without causing a headache. Learn more
+  about the migraine symptoms and stages.
+  <br>
+  <br>
+
+</p> 
+
+<h1> Migrane pain </h1>
+<p>
+<br>
+People describe migraine pain as:
+<br>
+
+1. pulsating<br>
+2. throbbing<br>
+3. perforating<br>
+4. pounding<br>
+5. debilitating<br>
+
+<br>
+It can also feel like a severe dull, steady ache.
+ The pain may start out as mild, but without treatment will become moderate to severe.
+ <br>
+ <br>
+
+
+Migraine pain most commonly affects the forehead area. It’s usually 
+on one side of the head, but it can occur on both sides, or shift.
+<br>
+<br>
+
+
+Most migraines last about 4 hours. If they’re not treated
+ or don’t respond to treatment, they can last for as long 
+ as 72 hours to a week. In migraines with aura, pain may 
+ overlap with an aura or may never occur at all.
+ <br>
+ <br>
+
+</p>
+
+<h1> Migrane Nausea </h1>
+<p>
+<br>
+More than half of the people who get migraines 
+have nausea as a symptom. Most also vomit. These
+ symptoms may start at the same time the headache
+  does. Usually, though, they start about one hour after the headache pain starts.
+  <br>
+  <br>
+
+
+Nausea and vomiting can be as troubling as the headache 
+itself. If you only have nausea, you may be able to take
+ your usual migraine medications. Vomiting, though, can
+  prevent you from being able to take pills or keep them
+   in your body long enough to be absorbed. If you have 
+   to delay taking migraine medication, your migraine is likely to become more severe
+   <br>
+   <br>
+
+<b>Treating nausea and preventing vomiting</b>
+<br>
+<br>
+If you have nausea without vomiting, your doctor may suggest
+ medication to ease nausea called anti-nausea or antiemetic
+  drugs. In this case, the antiemetic can help prevent vomiting and improve the nausea.
+  <br>
+  <br>
+
+
+Acupressure may also be helpful in treating migraine nausea.
+ A 2012 studyTrusted Source showed that acupressure reduced 
+ the intensity of migraine-associated nausea starting as soon
+  as 30 minutes, gaining improvement over 4 hours.
+  <br>
+  <br>
+
+
+<b>Treating nausea and vomiting together </b>
+<br>
+<br>
+Rather than treating the nausea and vomiting separately,
+ doctors prefer to ease those symptoms by treating the
+  migraine itself. If your migraines come with significant
+  
+  nausea and vomiting, you and your doctor may talk 
+  about starting preventive (prophylactic) medications.
+   See how to cope with the nausea and vertigo that may accompany your migraine.
+   <br>
+   <br>
+
+</p>
+        
+<h1> Migrane Test </h1>
+<p>
+<br>
+Doctors diagnose migraines by listening to your symptoms, 
+taking a thorough medical and family history, and 
+performing a physical exam to rule out other potential
+ causes. Imaging scans, such as a CT scan or MRI, can 
+ rule out other causes, including:
+ <br>
+ <br>
+
+
+1. tumors<br>
+2. abnormal brain structures<br>
+3. stroke<br>
+<br>
+</p>
+
+<h1> Migrane Treatment </h1>
+<p>
+<br>
+Migraines can’t be cured, but your doctor can help
+ you manage them so you get them less often and treat
+  symptoms when they occur. Treatment can also help 
+  make the migraines you have less severe.
+  <br>
+  <br>
+
+
+Your treatment plan depends on:
+<br>
+
+
+1. your age<br>
+2. how often you have migraines<br>
+3. the type of migraine you have<br>
+4. how severe they are, based on how long they last,
+ how much pain you have, and how often they keep you from going to school or work
+ <br>
+
+5. whether they include nausea or vomiting, as well as other symptoms<br>
+6. other health conditions you may have and other medications you may take<br>
+<br>
+
+Your treatment plan may include a combination of these:
+<br>
+
+1. self-care migraine remedies<br>
+2. lifestyle adjustments, including stress management and avoiding migraine triggers<br>
+3. OTC pain or migraine medications, such as NSAIDs or acetaminophen (Tylenol)<br>
+4. prescription migraine medications that you take every day to help
+ prevent migraines and reduce how often you have headaches
+ <br>
+5. prescription migraine medications that you take as 
+soon as a headache starts, to keep it from becoming severe and to ease symptoms<br>
+6. prescription medications to help with nausea or vomiting<br>
+
+7. counseling<br>
+</p>
+
+<h1>Migrane remedy </h1>
+<p>
+<br>
+You can try a few things at home that may also help remedy the pain from your migraines:
+<br>
+
+
+1. Lie down in a quiet, dark room.<br>
+2. Massage your scalp or temples.<br>
+3. Place a cold cloth over your forehead or behind your neck.<br>
+<br>
+
+</p>
+
+<h1> Migrane medication</h1>
+<p>
+<br>
+Medications can be used to either prevent a migraine
+ from happening or treat it once it occurs. You may
+  be able to get relief with OTC medication. However,
+   if OTC medications aren’t effective, your doctor may decide to prescribe other medications.
+   <br>
+   <br>
+
+
+These options will be based on the severity of your migraines and
+ any of your other health conditions. Medication options include 
+ both those for prevention and those for treatment during an attack.
+ <br>
+ <br>
+
+
+<b>Medication overuse headache </b>
+<br>
+<br>
+
+The frequent and recurring use of any kind of headache 
+drugs can cause what’s known as medication overuse headacheTrusted 
+Source (previously called a rebound headache). Persons with migraine 
+are at higher risk of developing this complication.
+<br>
+<br>
+
+
+When determining how to deal with your migraine headaches,
+ talk to your doctor about the frequency of your medication 
+ intake and alternatives to medications. Learn more about medication overuse headaches.
+ <br>
+ <br>
+
+</p>
+
+<h1>What causes migrane </h1>
+<p>
+<br>
+Researchers haven’t identified a definitive cause
+ for migraines. However, they have found some contributing 
+ factors that can trigger the condition. This includes
+  changes in brain chemicals, such as a decrease in
+   levels of the brain chemical serotonin.
+   <br>
+   <br>
+
+
+Other factors that may trigger a migraine include:
+<br>
+
+1. bright lights<br>
+2. severe heat, or other extremes in weather<br>
+3. dehydration<br>
+4. changes in barometric pressure<br>
+5. hormone changes in women, such as estrogen and progesterone
+ fluctuations during menstruation, pregnancy, or menopause
+ <br>
+6. excess stress<br>
+7. loud sounds<br>
+8. intense physical activity<br>
+9. skipping meals<br>
+10.changes in sleep patterns<br>
+11. use of certain medications, such as oral contraceptives or nitroglycerin<br>
+12. unusual smells<br>
+13. certain foods<br>
+14. smoking<br>
+15. alcohol use<br>
+16. traveling<br>
+<br>
+
+If you experience a migraine, your doctor may ask you to keep
+ a headache journal. Writing down what you were doing, what 
+ foods you ate, and what medications you were taking before 
+ your migraine began can help identify your triggers. Find out
+  what else might be causing or triggering your migraines.
+  <br>
+<br>
+</p>
+
+<h1>Food that trigger migrane </h1> 
+<p>
+<br>
+Certain foods or food ingredients may be more 
+likely to trigger migraines than others. These may include:
+<br>
+<br>
+
+
+1. alcohol or caffeinated drinks<br>
+2. food additives, such as nitrates (a preservative in cured meats), 
+aspartame (an artificial sugar), or monosodium glutamate (MSG)<br>
+3. tyramine, which occurs naturally in some foods<br><br>
+Tyramine also increases when foods are fermented or aged.
+ This includes foods like some aged cheeses, sauerkraut, and 
+ soy sauce. However, ongoing research is looking more closely 
+ at the role of tyramine in migraines. It may be a headache protector
+  in some people rather than a trigger. Check out these other foods that trigger migraines.
+</p>
+
+
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+        
+</body>
+        
+</html>
+        
+                    
+        
+    

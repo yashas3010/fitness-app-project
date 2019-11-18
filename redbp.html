@@ -1,0 +1,1019 @@
+<html>
+<head>
+<title> REDUCE BP </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+            
+/* Header/logo Title */
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
+}
+                
+/* Increase the font size of the heading */
+.header h1 {
+font-size: 40px;
+}
+                
+/* Style the top navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #333;
+}
+                
+/* Style the navigation bar links */
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+                
+/* Right-aligned link */
+.navbar a.right {
+float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+                
+        
+            
+                
+            
+                
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row{   
+flex-direction: column;
+}
+}
+                
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+div.logo {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
+    
+p{
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 2px;
+font-size: 150%
+}
+.about {
+border: 1px solid gray;
+padding: 50px;
+}
+    
+h2 {
+text-align: center;
+text-transform: uppercase;
+color:white;
+}
+    
+p {
+text-indent: 50px;
+text-align: justify;
+letter-spacing: 3px;
+}
+    
+img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 250px;
+}
+    
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+
+
+
+
+
+    
+    
+    
+</style>
+</head>
+<body style="background-color:powderblue;">
+                
+<div class="header">
+<h1>FIT N FINE 24/7</h1>
+<h2>A complete fitness portal</h2>
+</div>
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+<div class = "logo">
+<a href="home.html"><img src="logo.jpg" alt="FIT N FINE" width="250px" height="250px"></a>
+</div>
+    
+    
+<center><h1> TIPS TO REDUCE YOUR BLOOD PRESSURE </h1></center>
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="bp3.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="bp1.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="bp2.JPG" style="width:100%">
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+  
+  
+  
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+<h1> Everything You Need to Know About High Blood Pressure </h1>
+<h4>What is High blood pressure </h4> 
+<p>
+<br>
+High blood pressure, or hypertension, occurs when
+ your blood pressure increases to unhealthy levels.
+  Your blood pressure measurement takes into account 
+  how much blood is passing through your blood vessels
+   and the amount of resistance the blood meets while 
+   the heart is pumping.
+   <br>
+   <br>
+
+
+Narrow arteries increase resistance. The narrower
+ your arteries are, the higher your blood pressure
+  will be. Over the long term, increased pressure
+   can cause health issues, including heart disease.
+   <br>
+   <br>
+
+
+Hypertension is quite common. In fact, since the
+ guidelines have recently changed, it’s expected 
+ that nearly half of American adults will now be diagnosed with this condition.
+ <br>
+ <br>
+
+
+Hypertension typically develops over the course of several
+ years. Usually, you don’t notice any symptoms. But even
+  without symptoms, high blood pressure can cause damage
+   to your blood vessels and organs, especially the brain,
+    heart, eyes, and kidneys.
+    <br>
+    <br>
+
+
+Early detection is important. Regular blood pressure
+ readings can help you and your doctor notice any changes.
+  If your blood pressure is elevated, your doctor may 
+  have you check your blood pressure over a few weeks
+   to see if the number stays elevated or falls back to normal levels.
+   <br>
+   <br>
+
+
+Treatment for hypertension includes both prescription 
+medication and healthy lifestyle changes. If the condition 
+isn’t treated, it could lead to health issues, including heart attack and stroke.
+<br>
+<br>
+
+
+</p>
+
+<h1>What is the symptoms of High pressure ?</h1> 
+<p>
+<br>
+Hypertension is generally a silent condition.
+ Many people won’t experience any symptoms. It 
+ may take years or even decades for the condition 
+ to reach levels severe enough that symptoms
+  become obvious. Even then, these symptoms may be attributed to other issues.
+  <br>
+  <br>
+
+
+Symptoms of severe hypertension can include:
+<br>
+<br>
+
+
+1. headaches<br>
+2. shortness of breath<br>
+3. nosebleeds<br>
+4. flushing<br>
+5. dizziness<br>
+6. chest pain<br>
+7. visual changes<br>
+8. blood in the urine<br>
+<br>
+
+These symptoms require immediate medical attention.
+ They don’t occur in everyone with hypertension, but 
+ waiting for a symptom of this condition to appear could be fatal.
+ <br>
+ <br>
+
+
+The best way to know if you have hypertension is to get
+ regular blood pressure readings. Most doctors’ offices
+  take a blood pressure reading at every appointment.
+  <br>
+  <br>
+
+
+If you only have a yearly physical, talk to your doctor
+ about your risks for hypertension and other readings you 
+ may need to help you watch your blood pressure.
+ <br>
+ <br>
+
+
+For example, if you have a family history of heart disease
+ or have risk factors for developing the condition, your 
+ doctor may recommend that you have your blood pressure 
+ checked twice a year. This helps you and your doctor 
+ stay on top of any possible issues before they become problematic.
+ <br>
+ <br>
+
+</p>
+
+<h1>What causes high blood pressure </h1> 
+<p>
+<br>
+There are two types of hypertension. Each type has a different cause.
+<br>
+<br>
+
+
+<b>Primary hypertension</b>
+<br>
+
+Primary hypertension is also called essential hypertension. 
+This kind of hypertension develops over time with no identifiable cause.
+ Most people have this type of high blood pressure.
+ <br>
+ <br>
+
+
+Researchers are still unclear what mechanisms cause blood 
+pressure to slowly increase. A combination of factors may 
+play a role. These factors include:
+<br>
+<br>
+
+
+1. <b>Genes:</b> Some people are genetically predisposed to hypertension.
+ This may be from gene mutations or genetic abnormalities inherited
+  from your parents.
+  <br>
+2. <b>Physical changes:</b>
+If something in your body changes, you may begin experiencing
+ issues throughout your body. High blood pressure may be one
+  of those issues. For example, it’s thought that changes in
+   your kidney function due to aging may upset the body’s 
+   natural balance of salts and fluid. This change may cause
+    your body’s blood pressure to increase.
+<br>
+3. <b>Environment:</b> Over time, unhealthy lifestyle choices
+ like lack of physical activity and poor diet can
+  take their toll on your body. Lifestyle choices 
+  can lead to weight problems. Being overweight or 
+  obese can increase your risk for hypertension.
+
+  <br>
+  <br>
+
+<b>Secondary hypertension</b>
+<br>
+<br>
+
+Secondary hypertension often occurs quickly and can 
+
+become more severe than primary hypertension. Several
+ conditions that may cause secondary hypertension include:
+ <br>
+ <br>
+
+
+1. kidney disease<br>
+2. obstructive sleep apnea<br>
+3. congenital heart defects<br>
+4. problems with your thyroid<br>
+5. side effects of medications<br>
+6. use of illegal drugs<br>
+7. alcohol abuse or chronic use<br>
+8. adrenal gland problems<br>
+9. certain endocrine tumors<br>
+<br>
+
+</p>
+
+<h1> Diagonising high blood pressure </h1>
+<p>
+<br>
+Diagnosing hypertension is as simple as taking a
+ blood pressure reading. Most doctors’ offices check 
+ blood pressure as part of a routine visit. If you don’t
+  receive a blood pressure reading at your next appointment, request one
+<br>
+<br>
+
+If your blood pressure is elevated, your doctor may
+
+ request you have more readings over the course of a
+  few days or weeks. A hypertension diagnosis is rarely
+   given after just one reading. Your doctor needs to see
+    evidence of a sustained problem. That’s because
+     your environment can contribute to increased blood
+      pressure, such as the stress you may feel by being
+       at the doctor’s office. Also, blood pressure levels change throughout the day.
+<br>
+<br>
+
+
+If your blood pressure remains high, your doctor will likely
+ conduct more tests to rule out underlying conditions. These tests can include:
+ <br>
+ <br>
+
+1. urine test<br>
+2. cholesterol screening and other blood tests<br>
+3. test of your heart’s electrical activity with an 
+electrocardiogram (EKG, sometimes referred to as an ECG)
+<br>
+4. ultrasound of your heart or kidneys<br>
+5. These tests can help your doctor identify any
+ secondary issues causing your elevated blood pressure. 
+ They can also look at the effects high blood 
+ pressure may have had on your organs.
+ <br>
+
+6. During this time, your doctor may begin treating
+ your hypertension. Early treatment may reduce your risk of lasting damage.
+ <br>
+
+</p>
+
+
+<h1> How to understand High blood pressure reading  </h1>
+<p>
+<br>
+Two numbers create a blood pressure reading:
+<br>
+
+
+<b>Systolic pressure:</b> This is the first, or top, number. It indicates 
+the pressure in your arteries when your heart beats and pumps out blood.
+<br>
+<b>Diastolic pressure: </b>This is the second, or bottom, number. It’s 
+the reading of the pressure in your arteries between beats of your heart.
+<br>
+<br>
+
+Five categories define blood pressure readings for adults:
+<br>
+
+
+1. <b>Healthy:</b>A healthy blood pressure reading is less than 120/80 
+millimeters of mercury (mm Hg).
+<br>
+2. <b>Elevated:</b>The systolic number is between 120 and 129 mm Hg,
+ and the diastolic number is less than 80 mm Hg. Doctors usually don’t 
+ treat elevated blood pressure with medication. Instead, your doctor
+  may encourage lifestyle changes to help lower your numbers.
+<br>
+3. <b>Stage 1 hypertension:</b> The systolic number is between 130
+ and 139 mm Hg, or the diastolic number is between 80 and 89 mm Hg.
+ <br>
+
+4. <b>Stage 2 hypertension: </b>The systolic number is 140 mm Hg 
+or higher, or the diastolic number is 90 mm Hg or higher.
+<br>
+
+5. <b>Hypertensive crisis:</b> The systolic number is over 180 mm Hg,
+ or the diastolic number is over 120 mm Hg. Blood pressure in this
+  range requires urgent medical attention. If any symptoms such as
+   chest pain, headache, shortness of breath, or visual changes 
+   occur when blood pressure is this high, medical care in the emergency room is needed.
+   <br>
+   <br>
+
+A blood pressure reading is taken with a pressure cuff. 
+For an accurate reading, it’s important you have a cuff 
+that fits. An ill-fitting cuff may deliver inaccurate readings.
+<br>
+<br>
+
+
+Blood pressure readings are different for children and
+ teenagers. Ask your child’s doctor for the healthy ranges
+ for your child if you’re asked to monitor their blood pressure.
+
+<br>
+<br>
+
+</p>
+
+<h1> Treatment option for high blood pressure </h1>
+<p>
+<br>
+A number of factors help your doctor determine the best 
+treatment option for you. These factors include which type
+ of hypertension you have and what causes have been identified.
+ <br>
+ <br>
+
+
+<b>Primary hypertension treatment options
+
+</b>
+<br>
+<br>
+If your doctor diagnoses you with primary hypertension,
+ lifestyle changes may help reduce your high blood pressure. 
+ If lifestyle changes alone aren’t enough, or if they stop
+  being effective, your doctor may prescribe medication.
+  <br>
+  <br>
+
+
+<b>Secondary hypertension treatment options </b>
+<br>
+<br>
+
+If your doctor discovers an underlying issue causing
+ your hypertension, treatment will focus on that other
+  condition. For example, if a medicine you’ve started 
+  taking is causing increased blood pressure, your doctor 
+  will try other medicines that don’t have this side effect.
+  <br>
+  <br>
+
+
+Sometimes, hypertension is persistent despite treatment 
+for the underlying cause. In this case, your doctor may
+ work with you to develop lifestyle changes and prescribe
+  medications to help reduce your blood pressure.
+  <br>
+  <br>
+
+Treatment plans for hypertension often evolve. 
+What worked at first may become less useful 
+over time. Your doctor will continue to work with you to refine your treatment.
+<br>
+<br>
+
+</p>
+
+<h1>Medication for high blood pressure </h1> 
+<p>
+<br>
+Many people go through a trial-and-error phase
+ with blood pressure medications. You may need
+  to try different medicines until you find one 
+  or a combination of medications that work for you.
+  <br>
+  <br>
+
+Some of the medications used to treat hypertension include:
+<br>
+
+
+1. <b>Beta-blockers:</b> Beta-blockers make your heart beat slower
+ and with less force. This reduces the amount of blood pumped 
+ through your arteries with each beat, which lowers blood pressure.
+  It also blocks certain hormones in your body that can raise your blood pressure.<br>
+2. <b>Diuretics:</b> High sodium levels and excess fluid in your body
+ can increase blood pressure. Diuretics, also called water pills, help
+  your kidneys remove excess sodium from your body. As the sodium leaves,
+   extra fluid in your bloodstream moves into your urine, which helps 
+   lower your blood pressure.<br>
+3. <b>ACE inhibitors:</b> Angiotensin is a chemical that causes blood 
+vessels and artery walls to tighten and narrow. ACE (angiotensin 
+converting enzyme) inhibitors prevent the body from producing as
+ much of this chemical. This helps blood vessels relax and reduces blood pressure.<br>
+4. <b>Angiotensin II receptor blockers (ARBs):</b> While ACE inhibitors aim
+ to stop the creation of angiotensin, ARBs block angiotensin from binding
+  with receptors. Without the chemical, blood vessels won’t tighten. That
+   helps relax vessels and lower blood pressure.<br>
+
+5. <b>Calcium channel blockers: </b> These medications block some 
+of the calcium from entering the cardiac muscles of your heart. 
+This leads to less forceful heartbeats and a lower blood pressure.
+ These medicines also work in the blood vessels, causing them to
+  relax and further lowering blood pressure.
+  <br>
+  
+6. <b>Alpha-2 agonists: </b> This type of medication changes the nerve
+ impulses that cause blood vessels to tighten. This helps blood vessels
+  to relax, which reduces blood pressure.
+  <br>
+  <br> 
+
+</p>
+
+
+<h1> Home remedy for high blood pressure </h1>
+<p>
+<br>
+Healthy lifestyle changes can help you control 
+the factors that cause hypertension. Here are 
+some of the most common home remedies.
+<br>
+<br>
+
+
+<b>Developing a healthy diet</b>
+<br>
+<br>
+
+A heart-healthy diet is vital for helping to reduce high blood pressure.
+ It’s also important for managing hypertension that is under control
+  and reducing the risk of complications. These complications include
+   heart disease, stroke, and heart attack.
+   <br>
+   <br>
+
+A heart-healthy diet emphasizes foods that include:
+<br>
+
+
+1. fruits<br>
+2. vegetables<br>
+3. whole grains<br>
+4. lean proteins like fish<br>
+5. Increasing physical activity<br>
+<br>
+
+Reaching a healthy weight should include being more physically
+ active. In addition to helping you shed pounds, exercise
+  can help reduce stress, lower blood pressure naturally,
+   and strengthen your cardiovascular system.
+   <br>
+   <br>
+
+
+Aim to get 150 minutes of moderate physical activity
+ each week. That’s about 30 minutes five times per week.
+ <br>
+ <br>
+
+
+<b>Reaching a healthy weight </b>
+<br>
+<br>
+
+If you are overweight or obese, losing weight
+ through a heart-healthy diet and increased physical 
+ activity can help lower your blood pressure.
+<br>
+<br>
+
+
+<b>Excercise </b> 
+Exercise is a great way to manage stress. 
+Other activities can also be helpful. These include:
+<br>
+
+
+1. meditation<br>
+2. deep breathing<br>
+3. massage<br>
+4. muscle relaxation<br>
+5. yoga or tai chi<br>
+<br>
+
+These are all proven stress-reducing techniques.
+ Getting adequate sleep can also help reduce stress levels.
+ <br>
+ <br>
+
+
+<b>Adopting a cleaner lifestyle</b>
+<br>
+<br>
+
+If you’re a smoker, try to quit. The chemicals 
+in tobacco smoke damage the body’s tissues and harden blood vessel walls.
+<br>
+<br>
+
+
+If you regularly consume too much alcohol or have an 
+alcohol dependency, seek help to reduce the amount you 
+drink or stop altogether. Alcohol can raise blood pressure.
+<br>
+<br>
+
+</p>
+<h1>Dietert recommendation for people with high blood pressure </h1> 
+<p>
+<br>
+One of the easiest ways you can treat hypertension 
+and prevent possible complications is through your 
+diet. What you eat can go a long way toward easing
+ or eliminating hypertension.
+<br>
+<br>
+
+
+Here are some of the most common dietary 
+recommendations for people with hypertension.
+<br>
+<br>
+
+
+<b>Eat less meat, more plants </b>
+<br>
+<br>
+
+A plant-based diet is an easy way to increase fiber 
+and reduce the amount of sodium and unhealthy saturated
+ and trans fat you take in from dairy foods and meat. 
+ Increase the number of fruits, vegetables, leafy greens
+ , and whole grains you’re eating. Instead of red meat, 
+ opt for healthier lean proteins like fish, poultry, or tofu.
+ <br>
+ <br>
+
+
+<b>Reduce dietary sodium </b>
+<br>
+<br>
+
+People with hypertension and those with an increased
+ risk for heart disease may need to keep their daily 
+ sodium intake between 1,500 milligrams and 2,300 milligrams 
+ per day. The best way to reduce sodium is to cook fresh
+  foods more often. Avoid eating restaurant food or 
+  prepackaged foods, which are often very high in sodium.
+
+  <br>
+  <br>
+
+<b>Cut back on sweets </b>
+<br>
+<br>
+Sugary foods and beverages contain empty calories 
+but don’t have nutritional content. If you want something sweet, 
+try eating fresh fruit or small amounts of dark chocolate
+ that haven’t been sweetened as much with sugar. StudiesTrusted 
+ Source suggest regularly eating dark chocolate may reduce blood pressure.
+ <br>
+ <br>
+
+</p>
+<h1>What are the effects of high blood pressure on the body? </h1>
+<p>
+<br>
+
+Because hypertension is often a silent condition, it can cause damage
+ to your body for years before symptoms become obvious. 
+ If hypertension isn’t treated, you may face serious, even fatal, complications.
+ <br>
+ <br>
+
+
+Complications of hypertension include the following.
+<br>
+<br>
+
+<b>Damaged arteries</b>
+<br>
+<br>
+
+
+Healthy arteries are flexible and strong. Blood flows freely 
+and unobstructed through healthy arteries and vessels.
+<br>
+<br>
+
+
+
+Hypertension makes arteries tougher, tighter, and less 
+elastic. This damage makes it easier for dietary fats
+ to deposit in your arteries and restrict blood flow.
+  This damage can lead to increased blood pressure, 
+  blockages, and, eventually, heart attack and stroke.
+  <br>
+  <br>
+
+<b>Damaged heart </b>
+<br>
+<br>
+
+Hypertension makes your heart work too hard.
+ The increased pressure in your blood vessels 
+ forces your heart’s muscles to pump more frequently
+  and with more force than a healthy heart should have to.
+  <br>
+  <br>
+
+
+This may cause an enlarged heart. An enlarged heart 
+increases your risk for the following:
+<br>
+
+
+1. heart failure<br>
+2. arrhythmias<br>
+3. sudden cardiac death<br>
+4. heart attack<br>
+5. Damaged brain<br>
+6. Your brain relies on a healthy supply of oxygen-rich blood
+ to work properly. High blood pressure can reduce your brain’s supply of blood:
+ <br>
+ <br>
+
+
+Temporary blockages of blood flow to the brain are called transient ischemic attacks (TIAs).
+<br>
+<br>
+
+Significant blockages of blood flow cause brain cells to die. This is known as a stroke.
+<br>
+<br>
+
+Uncontrolled hypertension may also affect your memory and ability to 
+learn, recall, speak, and reason. Treating hypertension often doesn’t
+ erase or reverse the effects of uncontrolled hypertension. It
+  does, however, lower the risks for future problems.
+  <br>
+  <br>
+
+</p>
+<h1>High blood pressure: Tips for prevention </h1>
+<p>
+<br>
+
+If you have risk factors for hypertension, you can
+ take steps now to lower your risk for the condition and its complications.
+ <br>
+ <br>
+
+
+<b>Add healthy foods to your diet </b>
+<br>
+<br>
+Slowly work your way up to eating more servings of heart-healthy plants. 
+Aim to eat more than seven servings of fruits and vegetables 
+each day. Then aim to add one more serving per day for two weeks
+. After those two weeks, aim to add one more serving. The goal 
+is to have ten servings of fruits and vegetables per day.
+<br>
+<br>
+
+
+<b>Adjust how you think of the average dinner plate </b>
+<br>
+<br>
+
+Instead of having meat and three sides, create a dish that
+ uses meat as a condiment. In other words, instead of eating 
+ a steak with a side salad, eat a bigger salad and top it with
+  a smaller portion of steak.
+  <br>
+  <br>
+
+
+<b>Cut sugar</b>
+<br>
+<br>
+
+Try to incorporate fewer sugar-sweetened foods, 
+including flavored yogurts, cereals, and sodas.
+ Packaged foods hide unnecessary sugar, so be sure to read labels.
+ <br>
+ <br>
+
+
+<b>Set weight loss goals </b>
+<br>
+<br>
+
+Instead of an arbitrary goal to “lose weight,” 
+talk with your doctor about a healthy weight for
+ you. The Centers for Disease Control and Prevention
+  (CDC)Trusted Source recommends a weight loss goal of
+   one to two pounds a week. That means starting off
+    eating 500 calories less per day than what you 
+    normally eat. Then decide on what physical activity
+     you can start in order to reach that goal. If 
+     exercising five nights a week is too hard to work
+      into your schedule, aim for one more night than 
+      what you’re doing right now. When that fits comfortably
+       into your schedule, add another night.
+       <br>
+       <br>
+
+
+<b>Monitor your blood pressure regularly </b>
+<br>
+
+The best way to prevent complications and avoid problems is 
+to catch hypertension early. You can come into your doctor’s 
+office for a blood pressure reading, or your doctor may ask you
+ to purchase a blood pressure cuff and take readings at home.
+ <br>
+ <br>
+
+
+Keep a log of your blood pressure readings and take it to
+ your regular doctor appointments. This can help your doctor
+  see any possible problems before the condition advances.
+  <br>
+  <br>
+  
+</p>
+       
+        
+
+    
+    
+    
+    
+    
+    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    
+<div class="footer">
+<div class="navbar">
+<a href="home.html">HOME</a>
+<a href="about.html">ABOUT US</a>
+<a href="gethealthy.html">GET HEALTHY</a>
+<a href="#" class="right">CONTACT US</a>
+</div>
+</div>
+                        
+                        
+                            
+        
+        
+                                
+                        
+                
+
+</body>
+        
+</html>
+        
+                    
+        
+    
